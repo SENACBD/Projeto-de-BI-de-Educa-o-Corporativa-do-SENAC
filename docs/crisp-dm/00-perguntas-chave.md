@@ -636,9 +636,9 @@ A implementação definitiva dependerá da estrutura das fontes encontradas dura
 
 ## Repositório
 
-**URL Principal:** [A DEFINIR]
-**Proprietário:** Jurandir / Rafael
-**Visibilidade:** PÚBLICO
+**URL Principal:** [Repositório](https://github.com/SENACBD/Projeto-de-BI-de-Educa-o-Corporativa-do-SENAC/)
+**Proprietário:** Jurandir / Rafael  
+**Visibilidade:** PÚBLICO  
 
 A estrutura proposta será:
 
