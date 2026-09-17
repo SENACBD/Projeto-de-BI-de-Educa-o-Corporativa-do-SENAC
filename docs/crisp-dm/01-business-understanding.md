@@ -2,9 +2,9 @@
 
 ## Laboratório de Inovação IV — Prof. Edilberto Silva — 2026
 
-**Projeto:** "BI para Gestão Estratégica de Competências e Desenvolvimento dos 500 Colaboradores"
-**Data:** 17/09/2026
-**Última Atualização:** 17/09/2026
+**Projeto:** "BI para Gestão Estratégica de Competências e Desenvolvimento dos 500 Colaboradores"   
+**Data:** 17/09/2026   
+**Última Atualização:** 17/09/2026   
 **Status:** EM DESENVOLVIMENTO
 
 **Localização dos Arquivos:**
@@ -93,7 +93,7 @@ Transformar os dados de capacitação em inteligência para apoiar decisões da 
 
 ---
 
-**Documento Criado:** 17/09/2026
+**Documento Criado:** 17/09/2026   
 **Versão:** 1.0  
 **Status:** Em desenvolvimento
 
