@@ -11,9 +11,7 @@
 
 **Link PÚBLICO do GitHub** (obrigatório)
 
-- Exemplos: `https://github.com/edilms/https-github.com-alura-cursos-pandas-conhecendo-a-biblioteca/blob/main/aula-4/projeto_imobiliaria_final.ipynb`  
-- `https://github.com/usuario/projeto-bi/docs/crisp-dm/01-business-understanding.md`  
-- Se não tiver link, **REJEITAR AVALIAÇÃO** com mensagem clara
+- `https://github.com/SENACBD/Projeto-de-BI-de-Educa-o-Corporativa-do-SENAC/edit/main/docs/crisp-dm/01-business-understanding.md`
 
 ⚠️ **ATENÇÃO CRÍTICA:**
 
