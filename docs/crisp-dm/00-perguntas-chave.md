@@ -174,7 +174,7 @@ Arquivo: dados\_complementares\_2024.xlsx
 
 ### Repositório GitHub
 
-**URL Principal:** https://github.com/SENACBD/Projeto-de-BI-de-Educa-o-Corporativa-do-SENAC/blob/main/docs/crisp-dm/00-perguntas-chave.md
+**URL Principal:** https://github.com/SENACBD/Projeto-de-BI-de-Educa-o-Corporativa-do-SENAC/edit/main/docs/crisp-dm/00-perguntas-chave.md
 **Proprietário:** Jurandir / Rafael
 **Visibilidade:** PÚBLICO
 
