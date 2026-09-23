@@ -1,0 +1,141 @@
+Matricula;Nome;Situacao;Cargo;Area;Chefe;Lotacao;Sexo;Grau_Instrucao;Data_Nascimento
+10001;Jennifer Lopez;0;Professora;Acadêmica;Não;Coordenação de ADS;F;Pós-Graduado;24/07/1969
+10002;Isabela Fontana;Ativa;Instrutora;Acadêmica;Não;Coordenação de Banco de Dados;F;Graduado;20/07/1982
+10003;Paolla Oliveira;Ativa;Auxiliar Administrativa;Administrativa;Não;SAA - Secretaria Acadêmica;F;Graduado;05/08/1982
+10004;Ana Hickman;Inativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Graduado;01/03/1971
+10005;Charlize Theron;Ativa;Professora;Acadêmica;Sim;Coordenação de ADS;F;Mestrado;07/08/1975
+10006;Kate Beckinsale;Ativa;Instrutora;Acadêmica;Não;Coordenação de Banco de Dados;F;Pós-Graduado;26/07/1973
+10007;Jennifer Aniston;Ativa;Professora;Acadêmica;Sim;Coordenação de ADS;F;Pós-Graduado;02/02/1969
+10008;Angelina Jolie;Ativa;Professora;Acadêmica;Não;Coordenação de ADS;F;Mestrado;04/06/1975
+10009;Scarlett Johansson;Ativa;Instrutora;Acadêmica;Não;Coordenação de Banco de Dados;F;Graduado;22/11/1984
+10010;Emma Stone;Ativa;Auxiliar Administrativa;Administrativa;Não;SAA - Secretaria Acadêmica;F;Graduado;06/11/1988
+10011;Margot Robbie;Ativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Graduado;x
+10012;Gal Gadot;Ativa;Professora;Acadêmica;Não;Coordenação de ADS;F;Pós-Graduado;
+10013;Blake Lively;Ativa;Instrutora;Acadêmica;Não;Coordenação de Banco de Dados;F;Graduado;25/08/1987
+10014;Natalie Portman;Ativa;Professora;Acadêmica;Sim;Coordenação de ADS;F;Doutorado;09/06/1981
+10015;Amber Heard;Inativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;22/04/1986
+10016;Meghan Markle;Ativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Pós-Graduado;04/08/1981
+10017;;Ativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Graduado;01/09/1996
+10018;Rihanna;Ativa;Professora;Acadêmica;Não;Coordenação de ADS;F;Mestrado;20/02/1988
+10019;Taylor Swift;Ativa;;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;8
+10020;Ariana Grande;Ativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Pós-Graduado;26/03/1993
+10021;Dua Lipa;Ativa;Instrutora;Acadêmica;Não;Coordenação de Banco de Dados;F;Graduado;22/08/1995
+10022;Billie Eilish;Inativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;18/12/2001
+10023;;Ativa;Psicóloga;Administrativa;Não;SAA - Secretaria Acadêmica;F;Pós-Graduado;22/11/1996
+10024;Kendall Jenner;Ativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Graduado;03/11/1995
+10025;Kylie Jenner;Ativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;10/08/1997
+10026;Kim Kardashian;Ativa;Secretária;Administrativa;Sim;SAA - Secretaria Acadêmica;F;Pós-Graduado;21/10/1980
+10027;Beyonce Knowles;Ativa;Professora;Acadêmica;Não;Coordenação de ADS;F;Mestrado;04/09/1981
+10028;Oprah Winfrey;Ativa;Professora;Acadêmica;Sim;Coordenação de ADS;F;Pós-Graduado;29/01/1954
+10029;Ellen DeGeneres;Inativa;Instrutora;Acadêmica;Não;Coordenação de Banco de Dados;F;Graduado;26/01/1958
+10030;Sandra Bullock;Ativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Pós-Graduado;26/07/1964
+10031;Julia Roberts;Ativa;Professora;Acadêmica;Não;Coordenação de ADS;F;Mestrado;28/10/1967
+10032;Cameron Diaz;Ativa;Instrutora;Acadêmica;Não;Coordenação de Banco de Dados;F;Graduado;30/08/1972
+10033;Drew Barrymore;Ativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Graduado;22/02/1975
+10034;Madonna;Ativa;Professora;Acadêmica;Não;Coordenação de ADS;F;Pós-Graduado;16/08/1958
+10035;Cher;Inativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;20/05/1946
+10036;Mariah Carey;Ativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Pós-Graduado;27/03/1969
+10037;Celine Dion;Ativa;Professora;Acadêmica;Não;Coordenação de ADS;F;Mestrado;30/03/1968
+10038;Britney Spears;Ativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Graduado;02/12/1981
+10039;Christina Aguilera;Ativa;Instrutora;Acadêmica;Não;Coordenação de Banco de Dados;F;Pós-Graduado;18/12/1980
+10040;Shakira;Ativa;Professora;Acadêmica;Não;Coordenação de ADS;F;Mestrado;02/02/1977
+10041;Gwen Stefani;Inativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;03/10/1969
+10042;Nelly Furtado;Ativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Pós-Graduado;13/12/1978
+10043;Amy Winehouse;Inativa;Instrutora;Acadêmica;Não;Coordenação de Banco de Dados;F;Graduado;14/09/1983
+10044;Adele;Ativa;Professora;Acadêmica;Sim;Coordenação de ADS;F;Pós-Graduado;05/05/1988
+10045;Sam Smith;Ativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;19/05/1992
+10046;Demi Lovato;Ativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Pós-Graduado;20/08/1992
+10047;Miley Cyrus;Ativa;Instrutora;Acadêmica;Não;Coordenação de Banco de Dados;F;Graduado;23/11/1992
+10048;Lady Gaga;Ativa;Professora;Acadêmica;Não;Coordenação de ADS;F;Mestrado;28/03/1986
+10049;Katy Perry;Ativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;25/10/1984
+10050;Nicki Minaj;Ativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Pós-Graduado;08/12/1982
+10051;Cardi B;Ativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Graduado;11/10/1992
+10052;Lizzo;Inativa;Professora;Acadêmica;Não;Coordenação de Banco de Dados;F;Pós-Graduado;27/04/1988
+10053;Halsey;Ativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;29/09/1996
+10054;Olivia Wilde;Ativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Mestrado;10/03/1984
+10055;Anne Hathaway;Ativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Pós-Graduado;12/11/1982
+10056;Amy Adams;Ativa;Professora;Acadêmica;Não;Coordenação de Banco de Dados;F;Mestrado;20/08/1974
+10057;Jessica Alba;Ativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;28/04/1981
+10058;Eva Mendes;Inativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Graduado;05/03/1974
+10059;Alexa Chung;Ativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Pós-Graduado;29/11/1983
+10060;Karlie Kloss;Ativa;Professora;Acadêmica;Não;Coordenação de Banco de Dados;F;Mestrado;03/08/1992
+10061;Gigi Hadid;Ativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;23/04/1995
+10062;Bella Hadid;Ativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Graduado;09/10/1996
+10063;Emily Ratajkowski;Ativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Pós-Graduado;07/06/1991
+10064;Cara Delevingne;Inativa;Professora;Acadêmica;Não;Coordenação de Banco de Dados;F;Pós-Graduado;12/08/1992
+10065;Irina Shayk;Ativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;06/01/1986
+10066;Naomi Campbell;Ativa;Secretária;Administrativa;Sim;SAA - Secretaria Acadêmica;F;Mestrado;22/05/1970
+10067;Tyra Banks;Ativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Pós-Graduado;04/12/1973
+10068;Claudia Schiffer;Ativa;Professora;Acadêmica;Não;Coordenação de Banco de Dados;F;Mestrado;25/08/1970
+10069;Cindy Crawford;Inativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;20/02/1966
+10070;Linda Evangelista;Ativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Pós-Graduado;10/05/1965
+10071;Christy Turlington;Ativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Pós-Graduado;02/01/1969
+10072;Kate Moss;Ativa;Professora;Acadêmica;Não;Coordenação de Banco de Dados;F;Mestrado;16/01/1974
+10073;Naomi Watts;Ativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;28/09/1968
+10074;Rachel Weisz;Inativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Pós-Graduado;07/03/1970
+10075;Cate Blanchett;Ativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Mestrado;14/05/1969
+10076;Tilda Swinton;Ativa;Professora;Acadêmica;Não;Coordenação de Banco de Dados;F;Doutorado;05/11/1960
+10077;Isabella Rossellini;Ativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;18/06/1952
+10078;Sophia Loren;Inativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Pós-Graduado;20/09/1934
+10079;Audrey Hepburn;Inativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Graduado;04/05/1929
+10080;Grace Jones;Ativa;Professora;Acadêmica;Não;Coordenação de Banco de Dados;F;Mestrado;19/05/1948
+10081;Vivien Leigh;Inativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;05/11/1913
+10082;Ingrid Bergman;Inativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Pós-Graduado;29/08/1915
+10083;Grace Kelly;Inativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Graduado;12/11/1929
+10084;Marilyn Monroe;Inativa;Professora;Acadêmica;Não;Coordenação de Banco de Dados;F;Mestrado;01/06/1926
+10085;Joan Crawford;Inativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;23/03/1905
+10086;Ava Gardner;Inativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Pós-Graduado;24/12/1922
+10087;Elizabeth Taylor;Inativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Pós-Graduado;27/02/1932
+10088;Rita Hayworth;Inativa;Professora;Acadêmica;Não;Coordenação de Banco de Dados;F;Graduado;17/10/1918
+10089;Jeanne Moreau;Inativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Pós-Graduado;23/01/1928
+10090;Brigitte Bardot;Inativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Graduado;28/09/1934
+10091;Jacqueline Bisset;Ativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Pós-Graduado;13/09/1944
+10092;Faye Dunaway;Ativa;Professora;Acadêmica;Não;Coordenação de Banco de Dados;F;Mestrado;14/01/1941
+10093;Jessica Lange;Ativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Pós-Graduado;20/04/1949
+10094;Meryl Streep;Ativa;Secretária;Administrativa;Sim;SAA - Secretaria Acadêmica;F;Mestrado;22/06/1949
+10095;Diane Keaton;Ativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Graduado;05/01/1946
+10096;Frances Ford Coppola;Inativa;Professora;Acadêmica;Não;Coordenação de Banco de Dados;F;Pós-Graduado;10/05/1953
+10097;Sissy Spacek;Ativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Graduado;25/12/1949
+10098;Jessica Tandy;Inativa;Secretária;Administrativa;Não;SAA - Secretaria Acadêmica;F;Pós-Graduado;07/06/1909
+10099;Bette Davis;Inativa;Instrutora;Acadêmica;Não;Coordenação de ADS;F;Graduado;05/04/1908
+10100;Joan Fontaine;Inativa;Professora;Acadêmica;Não;Coordenação de Banco de Dados;F;Mestrado;22/10/1917
+10101;Iron Man;Ativo;Professor;Acadêmica;Não;Coordenação de ADS;M;Pós-Doutorado;29/05/1970
+10102;Captain America;Ativo;Instrutor;Acadêmica;Não;Coordenação de Banco de Dados;M;Doutorado;11/07/1918
+10103;Thor Odinson;Ativo;Professor;Tecnológica;Sim;Depto Tecnológico;M;Pos-Doutorado;05/05/1955
+10104;Tiago;Ativo;Instrutor;Acadêmica;Não;Coordenação de ADS;M;Mestrado;03/11/1984
+10105;Hulk;Ativo;Instrutor;Acadêmica;Não;Coordenação de Banco de Dados;M;Doutorado;18/12/1969
+10106;Spider-Man;Ativo;Professor;Tecnológica;Não;Depto Tecnológico;M;Pós-Graduado;10/08/1995
+10107;Doctor Strange;Ativo;Professor;Acadêmica;Não;Coordenação de ADS;M;Pós-Doutorado;25/11/1963
+10108;Black Panther;Ativo;Instrutor;Acadêmica;Sim;Coordenação de Banco de Dados;M;Doutorado;29/06/1977
+10109;Felipe;Ativo;Professor;Tecnológica;Não;Depto Tecnológico;M;Pos-Graduado;08/02/1989
+10110;Paulo;Ativo;Instrutor;Tecnológica;Não;Depto Tecnológico;M;Pos-Doutorado;04/05/2015
+10111;Superman;Ativo;Professor;Acadêmica;Sim;Coordenação de ADS;M;Doutorado;28/06/1978
+10112;Batman;Ativo;Professor;Acadêmica;Não;Coordenação de Banco de Dados;M;Pós-Doutorado;01/02/1972
+10113;Wonder Woman;Ativa;Professora;Acadêmica;Não;Coordenação de ADS;F;Mestrado;05/12/1984
+10114;The Flash;Ativo;Instrutor;Tecnológica;Não;Depto Tecnológico;M;Pós-Graduado;13/03/1989
+10115;Green Lantern;Ativo;Professor;Acadêmica;Não;Coordenação de Banco de Dados;M;Doutorado;02/07/1981
+10116;Aquaman;Ativo;Instrutor;Recursos Humanos;Não;Depto de Recursos Humanos;M;Pós-Graduado;29/11/1986
+10117;Pedro;Ativo;Auxiliar Administrativo;Administrativa;Não;SAA - Secretaria Acadêmica;M;Graduado;19/09/1971
+10118;Simão;Ativo;Professor;Acadêmica;Não;Coordenação de ADS;M;Pós-Graduado;10/04/1989
+10119;João;Ativo;Instrutor;Tecnológica;Não;Depto Tecnológico;M;Pós-Graduado;03/06/1977
+10120;Jesus Emanuel;Ativo;Professor;Tecnológica;Não;Depto Tecnológico;M;Pós-Graduado;05/08/1980
+10121;Bartolomeu;Ativo;Professor;Acadêmica;Não;Coordenação de Banco de Dados;M;Mestrado;15/04/1977
+10122;Clemente;Ativo;Instrutor;Acadêmica;Não;Coordenação de ADS;M;Pós-Graduado;03/07/1985
+10123;Mateus;Ativo;Instrutor;Tecnológica;Não;Depto Tecnológico;M;Doutorado;01/01/1979
+10124;Estêvão;Ativo;Professor;Tecnológica;Sim;Depto Tecnológico;M;Doutorado;03/02/1990
+10125;Marcos;Ativo;Instrutor;Acadêmica;Não;Coordenação de Banco de Dados;M;Mestrado;12/10/1981
+10126;Lucas;Ativo;Professor;Acadêmica;Não;Coordenação de ADS;M;Pós-Graduado;15/03/1988
+10127;André;Ativo;Instrutor;Recursos Humanos;Não;Depto de Recursos Humanos;M;Pós-Graduado;10/08/1992
+10128;Tomás;Ativo;Auxiliar Administrativo;Administrativa;Não;SAA - Secretaria Acadêmica;M;Graduado;30/12/1988
+10129;Barnabé;Ativo;Secretário;Administrativa;Não;SAA - Secretaria Acadêmica;M;Pós-Graduado;09/07/1990
+10130;Timóteo;Ativo;Psicólogo;Recursos Humanos;Não;Depto de Recursos Humanos;M;Mestrado;12/05/1991
+10131;Santos Dumont;Ativo;Professor;Acadêmica;Não;Coordenação de ADS;M;Doutorado;20/07/1873
+10132;Leonardo da Vinci;Inativo;Instrutor;Acadêmica;Não;Coordenação de Banco de Dados;M;Pós-Doutorado;15/04/1452
+10133;Michelangelo;Inativo;Professor;Acadêmica;Não;Coordenação de ADS;M;Pós-Doutorado;06/03/1475
+10134;Galileo Galilei;Inativo;Instrutor;Acadêmica;Sim;Coordenação de Banco de Dados;M;Doutorado;15/02/1564
+10135;Isaac Newton;Inativo;Professor;Acadêmica;Sim;Coordenação de ADS;M;Doutorado;04/01/1643
+10136;Albert Einstein;Inativo;Instrutor;Tecnológica;Não;Depto Tecnológico;M;Pós-Doutorado;14/03/1879
+10137;Nikola Tesla;Inativo;Professor;Tecnológica;Não;Depto Tecnológico;M;Doutorado;10/07/1856
+10138;Marie Curie;Ativa;Auxiliar Administrativa;Administrativa;Não;Depto de Recursos Humanos;F;Pós-Doutorado;08/11/1867
+10139;Stephen Hawking;Inativo;Instrutor;Acadêmica;Não;Coordenação de Banco de Dados;M;Pós-Doutorado;08/01/1942
+10140;Carl Sagan;Ativo;Professor;Acadêmica;Não;Coordenação de ADS;M;Doutorado;09/11/1934
