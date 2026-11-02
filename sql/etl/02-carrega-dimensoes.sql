@@ -1,3 +1,5 @@
+-- Script responsável por popular o Modelo Fato Dimensão
+
 -- ----------------------------
 -- Dimensão Cargo
 -- ----------------------------
