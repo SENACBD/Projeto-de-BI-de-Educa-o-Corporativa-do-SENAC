@@ -30,7 +30,7 @@ USE mmd_datawarehouse;
 
 
 -- =====================================================
--- 1. DIMENSÃO TEMPO (USAR JUNTO COM PROCEDURE)
+-- 1. DIMENSÃO TEMPO (USAR JUNTO COM PROCEDURE PARA POPULAR)
 -- =====================================================
 
 CREATE TABLE IF NOT EXISTS `MMD_facsenac`.`DimTempo` (
