@@ -1,4 +1,4 @@
--- Script responsável por popular o Modelo Fato Dimensão
+-- Script responsável por popular o Modelo Fato Dimensão!
 
 -- ----------------------------
 -- Dimensão Cargo
