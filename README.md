@@ -1,5 +1,7 @@
 # Projeto de BI: Educação Corporativa
 
+
+
 ## Sobre
 Esse é um projeto prático de Ciência de Dados em que analisamos três datasets contendo dados sobre cursos, funcionários e suas respectivas participações no contexto de desenvolvimento profissional dos funcionários do SENAC.
 
