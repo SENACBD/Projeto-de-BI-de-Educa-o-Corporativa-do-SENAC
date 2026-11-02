@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS dim_curso (
     data_inclusao_curso DATE NOT NULL,
     carga_horaria_curso INT NOT NULL,
     situacao_curso VARCHAR(15) NOT NULL
-        COMMENT 'Indica se o curso foi realizado ou nao.',
+        COMMENT 'Indica se o curso foi realizado ou não.',
     valor_contratado_curso DECIMAL(10,2) NOT NULL,
     PRIMARY KEY (id_curso)
 ) ENGINE = InnoDB;
@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS dim_programa (
 
 
 -- =====================================================
--- 10. DIMENSÃO CARGO E FUNCAO
+-- 10. DIMENSÃO CARGO E FUNÇÃO
 -- =====================================================
 
 CREATE TABLE IF NOT EXISTS dim_cargo_funcao (
