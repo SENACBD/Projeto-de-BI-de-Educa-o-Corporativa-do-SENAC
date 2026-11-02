@@ -1,4 +1,4 @@
-# Projeto de BI: Educação Corporativa
+# Projeto de BI: Educação Corporativa - SENAC
 
 ![Dados](image.jpg)
 
