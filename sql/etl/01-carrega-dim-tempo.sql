@@ -1,17 +1,3 @@
-/*DROP TABLE IF EXISTS dim_tempo;
-CREATE TABLE dim_tempo (
-        id_tempo         INTEGER PRIMARY KEY,  -- year*10000+month*100+day
-        data                DATE NOT NULL,
-        ano                 INTEGER NOT NULL,
-        mes                 INTEGER NOT NULL, -- 1 to 12
-        dia                 INTEGER NOT NULL, -- 1 to 31
-        bimestre            INTEGER NOT NULL, -- 1 to 4
-        semestre            INTEGER NOT NULL, -- 1 to 4
-        NomeDia             VARCHAR(9) NOT NULL, -- 'Monday', 'Tuesday'...
-        NomeMes             VARCHAR(9) NOT NULL, -- 'January', 'February'...
-        FinaldeSemana       CHAR(1) DEFAULT 'F' CHECK (finaldesemana in ('T', 'F'))
-) Engine=InnoDB;
-*/
 DROP PROCEDURE IF EXISTS carga_dimensao_tempo;
 DELIMITER //
 CREATE PROCEDURE carga_dimensao_tempo(IN startdate DATE,IN stopdate DATE)

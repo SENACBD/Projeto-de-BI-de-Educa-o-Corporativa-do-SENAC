@@ -1,7 +1,7 @@
 
 -- =====================================================
--- PROJETO MMD
--- CRIACAO DO BANCO DE DADOS DIMENSIONAL
+-- PROJETO EDUCAÇÃO CORPORATIVA - SENAC
+-- CRIAÇÃO DA ESTRUTURA DO BANCO DE DADOS DIMENSIONAL
 -- MySQL 8.0
 -- Geração: MySQL Workbench > Database > Forward Engineer
 -- =====================================================
@@ -30,17 +30,22 @@ USE mmd_datawarehouse;
 
 
 -- =====================================================
--- 1. DIMENSÃO TEMPO (USAR PROCEDURE AO INVÉS DISSO)
+-- 1. DIMENSÃO TEMPO (USAR JUNTO COM PROCEDURE)
 -- =====================================================
 
-/*
-CREATE TABLE IF NOT EXISTS dim_tempo (
-    id_tempo INT NOT NULL AUTO_INCREMENT,
-    mes INT NOT NULL,
-    ano INT NOT NULL,
-    PRIMARY KEY (id_tempo)
-) ENGINE = InnoDB;
-*/
+CREATE TABLE IF NOT EXISTS `MMD_facsenac`.`DimTempo` (
+        idDimtempo         INTEGER PRIMARY KEY,  -- year*10000+month*100+day
+        data                DATE NOT NULL,
+        ano                 INTEGER NOT NULL,
+        mes                 INTEGER NOT NULL, -- 1 to 12
+        dia                 INTEGER NOT NULL, -- 1 to 31
+        bimestre            INTEGER NOT NULL, -- 1 to 4
+        semestre            INTEGER NOT NULL, -- 1 to 4
+        NomeDia             VARCHAR(9) NOT NULL, -- 'Monday', 'Tuesday'...
+        NomeMes             VARCHAR(9) NOT NULL, -- 'January', 'February'...
+        FinaldeSemana       CHAR(1) DEFAULT 'F' CHECK (finaldesemana in ('T', 'F'))
+) Engine=InnoDB;
+
 
 -- =====================================================
 -- 2. DIMENSÃO LOTAÇÃO
@@ -75,7 +80,7 @@ CREATE TABLE IF NOT EXISTS dim_funcionario (
 
 CREATE TABLE IF NOT EXISTS dim_sexo (
     id_sexo INT NOT NULL AUTO_INCREMENT,
-    sexo VARCHAR(1) NOT NULL,
+    descricao_sexo VARCHAR(1) NOT NULL,
     PRIMARY KEY (id_sexo)
 ) ENGINE = InnoDB;
 

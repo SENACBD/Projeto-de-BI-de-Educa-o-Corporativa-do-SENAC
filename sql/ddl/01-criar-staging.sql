@@ -1,7 +1,7 @@
 
 -- =====================================================
--- BANCO DE DADOS: MMD_STAGING
--- Estrutura das tabelas de staging
+-- PROJETO EDUCAÇÃO CORPORATIVA - SENAC
+-- CRIAÇÃO E POPULAÇÃO DAS TABELAS DE STAGING
 -- MySQL 8.0
 -- Geração: MySQL Workbench > Server > Data Export
 -- =====================================================
