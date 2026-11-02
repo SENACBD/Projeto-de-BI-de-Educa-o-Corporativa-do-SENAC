@@ -1,0 +1,127 @@
+,COD_MATRICULA,NOME_FUNCIONARIO,MATRICULA_ATIVA,CARGO,AREA,CHEFE,DEPARTAMENTO,SEXO,GRAU_INSTRUCAO,DATA_NASCIMENTO
+1,10002,Isabela Fontana,Sim,Instrutora,Acadêmica,Não,Coordenação de Banco de Dados,F,Graduado,1982-07-20
+2,10003,Paolla Oliveira,Sim,Auxiliar Administrativa,Administrativa,Não,SAA - Secretaria Acadêmica,F,Graduado,1982-08-05
+3,10004,Ana Hickman,Não,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Graduado,1971-03-01
+4,10005,Charlize Theron,Sim,Professora,Acadêmica,Sim,Coordenação de ADS,F,Mestrado,1975-08-07
+5,10006,Kate Beckinsale,Sim,Instrutora,Acadêmica,Não,Coordenação de Banco de Dados,F,Pós-Graduado,1973-07-26
+6,10007,Jennifer Aniston,Sim,Professora,Acadêmica,Sim,Coordenação de ADS,F,Pós-Graduado,1969-02-02
+7,10008,Angelina Jolie,Sim,Professora,Acadêmica,Não,Coordenação de ADS,F,Mestrado,1975-06-04
+8,10009,Scarlett Johansson,Sim,Instrutora,Acadêmica,Não,Coordenação de Banco de Dados,F,Graduado,1984-11-22
+9,10010,Emma Stone,Sim,Auxiliar Administrativa,Administrativa,Não,SAA - Secretaria Acadêmica,F,Graduado,1988-11-06
+12,10013,Blake Lively,Sim,Instrutora,Acadêmica,Não,Coordenação de Banco de Dados,F,Graduado,1987-08-25
+13,10014,Natalie Portman,Sim,Professora,Acadêmica,Sim,Coordenação de ADS,F,Doutorado,1981-06-09
+14,10015,Amber Heard,Não,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1986-04-22
+15,10016,Meghan Markle,Sim,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Pós-Graduado,1981-08-04
+17,10018,Rihanna,Sim,Professora,Acadêmica,Não,Coordenação de ADS,F,Mestrado,1988-02-20
+19,10020,Ariana Grande,Sim,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Pós-Graduado,1993-03-26
+20,10021,Dua Lipa,Sim,Instrutora,Acadêmica,Não,Coordenação de Banco de Dados,F,Graduado,1995-08-22
+21,10022,Billie Eilish,Não,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,2001-12-18
+23,10024,Kendall Jenner,Sim,Instrutora,Acadêmica,Não,Coordenação de ADS,F,Graduado,1995-11-03
+24,10025,Kylie Jenner,Sim,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1997-08-10
+25,10026,Kim Kardashian,Sim,Secretária,Administrativa,Sim,SAA - Secretaria Acadêmica,F,Pós-Graduado,1980-10-21
+26,10027,Beyonce Knowles,Sim,Professora,Acadêmica,Não,Coordenação de ADS,F,Mestrado,1981-09-04
+27,10028,Oprah Winfrey,Sim,Professora,Acadêmica,Sim,Coordenação de ADS,F,Pós-Graduado,1954-01-29
+28,10029,Ellen DeGeneres,Não,Instrutora,Acadêmica,Não,Coordenação de Banco de Dados,F,Graduado,1958-01-26
+29,10030,Sandra Bullock,Sim,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Pós-Graduado,1964-07-26
+30,10031,Julia Roberts,Sim,Professora,Acadêmica,Não,Coordenação de ADS,F,Mestrado,1967-10-28
+31,10032,Cameron Diaz,Sim,Instrutora,Acadêmica,Não,Coordenação de Banco de Dados,F,Graduado,1972-08-30
+32,10033,Drew Barrymore,Sim,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Graduado,1975-02-22
+33,10034,Madonna,Sim,Professora,Acadêmica,Não,Coordenação de ADS,F,Pós-Graduado,1958-08-16
+34,10035,Cher,Não,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1946-05-20
+35,10036,Mariah Carey,Sim,Instrutora,Acadêmica,Não,Coordenação de ADS,F,Pós-Graduado,1969-03-27
+36,10037,Celine Dion,Sim,Professora,Acadêmica,Não,Coordenação de ADS,F,Mestrado,1968-03-30
+37,10038,Britney Spears,Sim,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Graduado,1981-12-02
+38,10039,Christina Aguilera,Sim,Instrutora,Acadêmica,Não,Coordenação de Banco de Dados,F,Pós-Graduado,1980-12-18
+39,10040,Shakira,Sim,Professora,Acadêmica,Não,Coordenação de ADS,F,Mestrado,1977-02-02
+40,10041,Gwen Stefani,Não,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1969-10-03
+41,10042,Nelly Furtado,Sim,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Pós-Graduado,1978-12-13
+42,10043,Amy Winehouse,Não,Instrutora,Acadêmica,Não,Coordenação de Banco de Dados,F,Graduado,1983-09-14
+43,10044,Adele,Sim,Professora,Acadêmica,Sim,Coordenação de ADS,F,Pós-Graduado,1988-05-05
+44,10045,Sam Smith,Sim,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1992-05-19
+45,10046,Demi Lovato,Sim,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Pós-Graduado,1992-08-20
+46,10047,Miley Cyrus,Sim,Instrutora,Acadêmica,Não,Coordenação de Banco de Dados,F,Graduado,1992-11-23
+47,10048,Lady Gaga,Sim,Professora,Acadêmica,Não,Coordenação de ADS,F,Mestrado,1986-03-28
+48,10049,Katy Perry,Sim,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1984-10-25
+49,10050,Nicki Minaj,Sim,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Pós-Graduado,1982-12-08
+50,10051,Cardi B,Sim,Instrutora,Acadêmica,Não,Coordenação de ADS,F,Graduado,1992-10-11
+51,10052,Lizzo,Não,Professora,Acadêmica,Não,Coordenação de Banco de Dados,F,Pós-Graduado,1988-04-27
+52,10053,Halsey,Sim,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1996-09-29
+53,10054,Olivia Wilde,Sim,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Mestrado,1984-03-10
+54,10055,Anne Hathaway,Sim,Instrutora,Acadêmica,Não,Coordenação de ADS,F,Pós-Graduado,1982-11-12
+55,10056,Amy Adams,Sim,Professora,Acadêmica,Não,Coordenação de Banco de Dados,F,Mestrado,1974-08-20
+56,10057,Jessica Alba,Sim,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1981-04-28
+57,10058,Eva Mendes,Não,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Graduado,1974-03-05
+58,10059,Alexa Chung,Sim,Instrutora,Acadêmica,Não,Coordenação de ADS,F,Pós-Graduado,1983-11-29
+59,10060,Karlie Kloss,Sim,Professora,Acadêmica,Não,Coordenação de Banco de Dados,F,Mestrado,1992-08-03
+60,10061,Gigi Hadid,Sim,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1995-04-23
+61,10062,Bella Hadid,Sim,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Graduado,1996-10-09
+62,10063,Emily Ratajkowski,Sim,Instrutora,Acadêmica,Não,Coordenação de ADS,F,Pós-Graduado,1991-06-07
+63,10064,Cara Delevingne,Não,Professora,Acadêmica,Não,Coordenação de Banco de Dados,F,Pós-Graduado,1992-08-12
+64,10065,Irina Shayk,Sim,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1986-01-06
+65,10066,Naomi Campbell,Sim,Secretária,Administrativa,Sim,SAA - Secretaria Acadêmica,F,Mestrado,1970-05-22
+66,10067,Tyra Banks,Sim,Instrutora,Acadêmica,Não,Coordenação de ADS,F,Pós-Graduado,1973-12-04
+67,10068,Claudia Schiffer,Sim,Professora,Acadêmica,Não,Coordenação de Banco de Dados,F,Mestrado,1970-08-25
+68,10069,Cindy Crawford,Não,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1966-02-20
+69,10070,Linda Evangelista,Sim,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Pós-Graduado,1965-05-10
+70,10071,Christy Turlington,Sim,Instrutora,Acadêmica,Não,Coordenação de ADS,F,Pós-Graduado,1969-01-02
+71,10072,Kate Moss,Sim,Professora,Acadêmica,Não,Coordenação de Banco de Dados,F,Mestrado,1974-01-16
+72,10073,Naomi Watts,Sim,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1968-09-28
+73,10074,Rachel Weisz,Não,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Pós-Graduado,1970-03-07
+74,10075,Cate Blanchett,Sim,Instrutora,Acadêmica,Não,Coordenação de ADS,F,Mestrado,1969-05-14
+75,10076,Tilda Swinton,Sim,Professora,Acadêmica,Não,Coordenação de Banco de Dados,F,Doutorado,1960-11-05
+76,10077,Isabella Rossellini,Sim,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1952-06-18
+77,10078,Sophia Loren,Não,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Pós-Graduado,1934-09-20
+78,10079,Audrey Hepburn,Não,Instrutora,Acadêmica,Não,Coordenação de ADS,F,Graduado,1929-05-04
+79,10080,Grace Jones,Sim,Professora,Acadêmica,Não,Coordenação de Banco de Dados,F,Mestrado,1948-05-19
+80,10081,Vivien Leigh,Não,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1913-11-05
+81,10082,Ingrid Bergman,Não,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Pós-Graduado,1915-08-29
+82,10083,Grace Kelly,Não,Instrutora,Acadêmica,Não,Coordenação de ADS,F,Graduado,1929-11-12
+83,10084,Marilyn Monroe,Não,Professora,Acadêmica,Não,Coordenação de Banco de Dados,F,Mestrado,1926-06-01
+84,10085,Joan Crawford,Não,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1905-03-23
+85,10086,Ava Gardner,Não,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Pós-Graduado,1922-12-24
+86,10087,Elizabeth Taylor,Não,Instrutora,Acadêmica,Não,Coordenação de ADS,F,Pós-Graduado,1932-02-27
+87,10088,Rita Hayworth,Não,Professora,Acadêmica,Não,Coordenação de Banco de Dados,F,Graduado,1918-10-17
+88,10089,Jeanne Moreau,Não,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Pós-Graduado,1928-01-23
+89,10090,Brigitte Bardot,Não,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Graduado,1934-09-28
+90,10091,Jacqueline Bisset,Sim,Instrutora,Acadêmica,Não,Coordenação de ADS,F,Pós-Graduado,1944-09-13
+91,10092,Faye Dunaway,Sim,Professora,Acadêmica,Não,Coordenação de Banco de Dados,F,Mestrado,1941-01-14
+92,10093,Jessica Lange,Sim,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Pós-Graduado,1949-04-20
+93,10094,Meryl Streep,Sim,Secretária,Administrativa,Sim,SAA - Secretaria Acadêmica,F,Mestrado,1949-06-22
+94,10095,Diane Keaton,Sim,Instrutora,Acadêmica,Não,Coordenação de ADS,F,Graduado,1946-01-05
+95,10096,Frances Ford Coppola,Não,Professora,Acadêmica,Não,Coordenação de Banco de Dados,F,Pós-Graduado,1953-05-10
+96,10097,Sissy Spacek,Sim,Auxiliar Administrativa,Administrativa,Não,Depto de Recursos Humanos,F,Graduado,1949-12-25
+97,10098,Jessica Tandy,Não,Secretária,Administrativa,Não,SAA - Secretaria Acadêmica,F,Pós-Graduado,1909-06-07
+98,10099,Bette Davis,Não,Instrutora,Acadêmica,Não,Coordenação de ADS,F,Graduado,1908-04-05
+99,10100,Joan Fontaine,Não,Professora,Acadêmica,Não,Coordenação de Banco de Dados,F,Mestrado,1917-10-22
+100,10101,Iron Man,Sim,Professor,Acadêmica,Não,Coordenação de ADS,M,Pós-Doutorado,1970-05-29
+101,10102,Captain America,Sim,Instrutor,Acadêmica,Não,Coordenação de Banco de Dados,M,Doutorado,1918-07-11
+102,10103,Thor Odinson,Sim,Professor,Tecnológica,Sim,Depto Tecnológico,M,Pos-Doutorado,1955-05-05
+103,10104,Tiago,Sim,Instrutor,Acadêmica,Não,Coordenação de ADS,M,Mestrado,1984-11-03
+104,10105,Hulk,Sim,Instrutor,Acadêmica,Não,Coordenação de Banco de Dados,M,Doutorado,1969-12-18
+105,10106,Spider-Man,Sim,Professor,Tecnológica,Não,Depto Tecnológico,M,Pós-Graduado,1995-08-10
+106,10107,Doctor Strange,Sim,Professor,Acadêmica,Não,Coordenação de ADS,M,Pós-Doutorado,1963-11-25
+107,10108,Black Panther,Sim,Instrutor,Acadêmica,Sim,Coordenação de Banco de Dados,M,Doutorado,1977-06-29
+108,10109,Felipe,Sim,Professor,Tecnológica,Não,Depto Tecnológico,M,Pos-Graduado,1989-02-08
+109,10110,Paulo,Sim,Instrutor,Tecnológica,Não,Depto Tecnológico,M,Pos-Doutorado,2015-05-04
+110,10111,Superman,Sim,Professor,Acadêmica,Sim,Coordenação de ADS,M,Doutorado,1978-06-28
+111,10112,Batman,Sim,Professor,Acadêmica,Não,Coordenação de Banco de Dados,M,Pós-Doutorado,1972-02-01
+112,10113,Wonder Woman,Sim,Professora,Acadêmica,Não,Coordenação de ADS,F,Mestrado,1984-12-05
+113,10114,The Flash,Sim,Instrutor,Tecnológica,Não,Depto Tecnológico,M,Pós-Graduado,1989-03-13
+114,10115,Green Lantern,Sim,Professor,Acadêmica,Não,Coordenação de Banco de Dados,M,Doutorado,1981-07-02
+115,10116,Aquaman,Sim,Instrutor,Recursos Humanos,Não,Depto de Recursos Humanos,M,Pós-Graduado,1986-11-29
+116,10117,Pedro,Sim,Auxiliar Administrativo,Administrativa,Não,SAA - Secretaria Acadêmica,M,Graduado,1971-09-19
+117,10118,Simão,Sim,Professor,Acadêmica,Não,Coordenação de ADS,M,Pós-Graduado,1989-04-10
+118,10119,João,Sim,Instrutor,Tecnológica,Não,Depto Tecnológico,M,Pós-Graduado,1977-06-03
+119,10120,Jesus Emanuel,Sim,Professor,Tecnológica,Não,Depto Tecnológico,M,Pós-Graduado,1980-08-05
+120,10121,Bartolomeu,Sim,Professor,Acadêmica,Não,Coordenação de Banco de Dados,M,Mestrado,1977-04-15
+121,10122,Clemente,Sim,Instrutor,Acadêmica,Não,Coordenação de ADS,M,Pós-Graduado,1985-07-03
+122,10123,Mateus,Sim,Instrutor,Tecnológica,Não,Depto Tecnológico,M,Doutorado,1979-01-01
+123,10124,Estêvão,Sim,Professor,Tecnológica,Sim,Depto Tecnológico,M,Doutorado,1990-02-03
+124,10125,Marcos,Sim,Instrutor,Acadêmica,Não,Coordenação de Banco de Dados,M,Mestrado,1981-10-12
+125,10126,Lucas,Sim,Professor,Acadêmica,Não,Coordenação de ADS,M,Pós-Graduado,1988-03-15
+126,10127,André,Sim,Instrutor,Recursos Humanos,Não,Depto de Recursos Humanos,M,Pós-Graduado,1992-08-10
+127,10128,Tomás,Sim,Auxiliar Administrativo,Administrativa,Não,SAA - Secretaria Acadêmica,M,Graduado,1988-12-30
+128,10129,Barnabé,Sim,Secretário,Administrativa,Não,SAA - Secretaria Acadêmica,M,Pós-Graduado,1990-07-09
+129,10130,Timóteo,Sim,Psicólogo,Recursos Humanos,Não,Depto de Recursos Humanos,M,Mestrado,1991-05-12
+138,10139,Stephen Hawking,Não,Instrutor,Acadêmica,Não,Coordenação de Banco de Dados,M,Pós-Doutorado,1942-01-08
+139,10140,Carl Sagan,Sim,Professor,Acadêmica,Não,Coordenação de ADS,M,Doutorado,1934-11-09
