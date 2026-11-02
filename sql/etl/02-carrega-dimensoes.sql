@@ -1,4 +1,21 @@
+-- ----------------------------
+-- Dimensão Cargo
+-- ----------------------------
 
+use mmd_datawarehouse;
+-- delete from dim_cargo;
+
+insert into dim_cargo (
+  id_cargo,
+  descricao_cargo)
+values
+("Auxiliar Administrativo"),
+("Instrutor"),
+("Professor"),
+("Psicólogo"),
+("Secretário");
+
+select * from mmd_datawarehouse.dim_cargo;
 
 
 -- ----------------------------
@@ -21,6 +38,20 @@ select * from mmd_datawarehouse.dim_categoria;
 
 
 -- ----------------------------
+-- Dimensão Curso
+-- ----------------------------
+
+use mmd_datawarehouse;
+-- delete from DimCurso;
+
+insert into mmd_datawarehouse.dim_curso (descricao_curso) 
+select distinct descricao_curso 
+from mmd_staging.dataset_participacaocurso_limpo;
+
+SELECT * FROM  mmd_datawarehouse.dim_curso;
+
+
+-- ----------------------------
 -- Dimensão Departamento
 -- ----------------------------
 
@@ -38,40 +69,6 @@ values
 ("Secretaria Acadêmica");
 
 select * from mmd_datawarehouse.dim_departamento;
-
-
--- ----------------------------
--- Dimensão Cargo
--- ----------------------------
-
-use mmd_datawarehouse;
--- delete from dim_cargo;
-
-insert into dim_cargo (
-  id_cargo,
-  descricao_cargo)
-values
-("Auxiliar Administrativo"),
-("Instrutor"),
-("Professor"),
-("Psicólogo"),
-("Secretário");
-
-select * from mmd_datawarehouse.dim_cargo;
-
-
--- ----------------------------
--- Dimensão Curso
--- ----------------------------
-
-use mmd_datawarehouse;
--- delete from DimCurso;
-
-insert into mmd_datawarehouse.dim_curso (descricao_curso) 
-select distinct descricao_curso 
-from mmd_staging.dataset_participacaocurso_limpo;
-
-SELECT * FROM  mmd_datawarehouse.dim_curso;
 
 
 -- ----------------------------
