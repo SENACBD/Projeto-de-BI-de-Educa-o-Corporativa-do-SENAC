@@ -1,0 +1,127 @@
+COD_MATRICULA;NOME_FUNCIONARIO;MATRICULA_ATIVA;CARGO;AREA;CHEFE;DEPARTAMENTO;SEXO;GRAU_INSTRUCAO;DATA_NASCIMENTO
+10002;Isabela Fontana;Sim;Instrutor;Acadêmico;Não;Coordenação de Banco de Dados;F;Graduado;1982-07-20
+10003;Paolla Oliveira;Sim;Auxiliar Administrativo;Administração;Não;Secretaria Acadêmica;F;Graduado;1982-08-05
+10004;Ana Hickman;Não;Secretário;Administração;Não;Secretaria Acadêmica;F;Graduado;1971-03-01
+10005;Charlize Theron;Sim;Professor;Acadêmico;Sim;Coordenação de Análise e Desenvolvimento de Sistemas;F;Mestrado;1975-08-07
+10006;Kate Beckinsale;Sim;Instrutor;Acadêmico;Não;Coordenação de Banco de Dados;F;Pós-Graduado;1973-07-26
+10007;Jennifer Aniston;Sim;Professor;Acadêmico;Sim;Coordenação de Análise e Desenvolvimento de Sistemas;F;Pós-Graduado;1969-02-02
+10008;Angelina Jolie;Sim;Professor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Mestrado;1975-06-04
+10009;Scarlett Johansson;Sim;Instrutor;Acadêmico;Não;Coordenação de Banco de Dados;F;Graduado;1984-11-22
+10010;Emma Stone;Sim;Auxiliar Administrativo;Administração;Não;Secretaria Acadêmica;F;Graduado;1988-11-06
+10013;Blake Lively;Sim;Instrutor;Acadêmico;Não;Coordenação de Banco de Dados;F;Graduado;1987-08-25
+10014;Natalie Portman;Sim;Professor;Acadêmico;Sim;Coordenação de Análise e Desenvolvimento de Sistemas;F;Doutorado;1981-06-09
+10015;Amber Heard;Não;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1986-04-22
+10016;Meghan Markle;Sim;Secretário;Administração;Não;Secretaria Acadêmica;F;Pós-Graduado;1981-08-04
+10018;Rihanna;Sim;Professor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Mestrado;1988-02-20
+10020;Ariana Grande;Sim;Secretário;Administração;Não;Secretaria Acadêmica;F;Pós-Graduado;1993-03-26
+10021;Dua Lipa;Sim;Instrutor;Acadêmico;Não;Coordenação de Banco de Dados;F;Graduado;1995-08-22
+10022;Billie Eilish;Não;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;2001-12-18
+10024;Kendall Jenner;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Graduado;1995-11-03
+10025;Kylie Jenner;Sim;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1997-08-10
+10026;Kim Kardashian;Sim;Secretário;Administração;Sim;Secretaria Acadêmica;F;Pós-Graduado;1980-10-21
+10027;Beyonce Knowles;Sim;Professor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Mestrado;1981-09-04
+10028;Oprah Winfrey;Sim;Professor;Acadêmico;Sim;Coordenação de Análise e Desenvolvimento de Sistemas;F;Pós-Graduado;1954-01-29
+10029;Ellen DeGeneres;Não;Instrutor;Acadêmico;Não;Coordenação de Banco de Dados;F;Graduado;1958-01-26
+10030;Sandra Bullock;Sim;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Pós-Graduado;1964-07-26
+10031;Julia Roberts;Sim;Professor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Mestrado;1967-10-28
+10032;Cameron Diaz;Sim;Instrutor;Acadêmico;Não;Coordenação de Banco de Dados;F;Graduado;1972-08-30
+10033;Drew Barrymore;Sim;Secretário;Administração;Não;Secretaria Acadêmica;F;Graduado;1975-02-22
+10034;Madonna;Sim;Professor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Pós-Graduado;1958-08-16
+10035;Cher;Não;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1946-05-20
+10036;Mariah Carey;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Pós-Graduado;1969-03-27
+10037;Celine Dion;Sim;Professor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Mestrado;1968-03-30
+10038;Britney Spears;Sim;Secretário;Administração;Não;Secretaria Acadêmica;F;Graduado;1981-12-02
+10039;Christina Aguilera;Sim;Instrutor;Acadêmico;Não;Coordenação de Banco de Dados;F;Pós-Graduado;1980-12-18
+10040;Shakira;Sim;Professor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Mestrado;1977-02-02
+10041;Gwen Stefani;Não;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1969-10-03
+10042;Nelly Furtado;Sim;Secretário;Administração;Não;Secretaria Acadêmica;F;Pós-Graduado;1978-12-13
+10043;Amy Winehouse;Não;Instrutor;Acadêmico;Não;Coordenação de Banco de Dados;F;Graduado;1983-09-14
+10044;Adele;Sim;Professor;Acadêmico;Sim;Coordenação de Análise e Desenvolvimento de Sistemas;F;Pós-Graduado;1988-05-05
+10045;Sam Smith;Sim;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1992-05-19
+10046;Demi Lovato;Sim;Secretário;Administração;Não;Secretaria Acadêmica;F;Pós-Graduado;1992-08-20
+10047;Miley Cyrus;Sim;Instrutor;Acadêmico;Não;Coordenação de Banco de Dados;F;Graduado;1992-11-23
+10048;Lady Gaga;Sim;Professor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Mestrado;1986-03-28
+10049;Katy Perry;Sim;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1984-10-25
+10050;Nicki Minaj;Sim;Secretário;Administração;Não;Secretaria Acadêmica;F;Pós-Graduado;1982-12-08
+10051;Cardi B;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Graduado;1992-10-11
+10052;Lizzo;Não;Professor;Acadêmico;Não;Coordenação de Banco de Dados;F;Pós-Graduado;1988-04-27
+10053;Halsey;Sim;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1996-09-29
+10054;Olivia Wilde;Sim;Secretário;Administração;Não;Secretaria Acadêmica;F;Mestrado;1984-03-10
+10055;Anne Hathaway;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Pós-Graduado;1982-11-12
+10056;Amy Adams;Sim;Professor;Acadêmico;Não;Coordenação de Banco de Dados;F;Mestrado;1974-08-20
+10057;Jessica Alba;Sim;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1981-04-28
+10058;Eva Mendes;Não;Secretário;Administração;Não;Secretaria Acadêmica;F;Graduado;1974-03-05
+10059;Alexa Chung;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Pós-Graduado;1983-11-29
+10060;Karlie Kloss;Sim;Professor;Acadêmico;Não;Coordenação de Banco de Dados;F;Mestrado;1992-08-03
+10061;Gigi Hadid;Sim;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1995-04-23
+10062;Bella Hadid;Sim;Secretário;Administração;Não;Secretaria Acadêmica;F;Graduado;1996-10-09
+10063;Emily Ratajkowski;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Pós-Graduado;1991-06-07
+10064;Cara Delevingne;Não;Professor;Acadêmico;Não;Coordenação de Banco de Dados;F;Pós-Graduado;1992-08-12
+10065;Irina Shayk;Sim;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1986-01-06
+10066;Naomi Campbell;Sim;Secretário;Administração;Sim;Secretaria Acadêmica;F;Mestrado;1970-05-22
+10067;Tyra Banks;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Pós-Graduado;1973-12-04
+10068;Claudia Schiffer;Sim;Professor;Acadêmico;Não;Coordenação de Banco de Dados;F;Mestrado;1970-08-25
+10069;Cindy Crawford;Não;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1966-02-20
+10070;Linda Evangelista;Sim;Secretário;Administração;Não;Secretaria Acadêmica;F;Pós-Graduado;1965-05-10
+10071;Christy Turlington;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Pós-Graduado;1969-01-02
+10072;Kate Moss;Sim;Professor;Acadêmico;Não;Coordenação de Banco de Dados;F;Mestrado;1974-01-16
+10073;Naomi Watts;Sim;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1968-09-28
+10074;Rachel Weisz;Não;Secretário;Administração;Não;Secretaria Acadêmica;F;Pós-Graduado;1970-03-07
+10075;Cate Blanchett;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Mestrado;1969-05-14
+10076;Tilda Swinton;Sim;Professor;Acadêmico;Não;Coordenação de Banco de Dados;F;Doutorado;1960-11-05
+10077;Isabella Rossellini;Sim;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1952-06-18
+10078;Sophia Loren;Não;Secretário;Administração;Não;Secretaria Acadêmica;F;Pós-Graduado;1934-09-20
+10079;Audrey Hepburn;Não;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Graduado;1929-05-04
+10080;Grace Jones;Sim;Professor;Acadêmico;Não;Coordenação de Banco de Dados;F;Mestrado;1948-05-19
+10081;Vivien Leigh;Não;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1913-11-05
+10082;Ingrid Bergman;Não;Secretário;Administração;Não;Secretaria Acadêmica;F;Pós-Graduado;1915-08-29
+10083;Grace Kelly;Não;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Graduado;1929-11-12
+10084;Marilyn Monroe;Não;Professor;Acadêmico;Não;Coordenação de Banco de Dados;F;Mestrado;1926-06-01
+10085;Joan Crawford;Não;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1905-03-23
+10086;Ava Gardner;Não;Secretário;Administração;Não;Secretaria Acadêmica;F;Pós-Graduado;1922-12-24
+10087;Elizabeth Taylor;Não;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Pós-Graduado;1932-02-27
+10088;Rita Hayworth;Não;Professor;Acadêmico;Não;Coordenação de Banco de Dados;F;Graduado;1918-10-17
+10089;Jeanne Moreau;Não;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Pós-Graduado;1928-01-23
+10090;Brigitte Bardot;Não;Secretário;Administração;Não;Secretaria Acadêmica;F;Graduado;1934-09-28
+10091;Jacqueline Bisset;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Pós-Graduado;1944-09-13
+10092;Faye Dunaway;Sim;Professor;Acadêmico;Não;Coordenação de Banco de Dados;F;Mestrado;1941-01-14
+10093;Jessica Lange;Sim;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Pós-Graduado;1949-04-20
+10094;Meryl Streep;Sim;Secretário;Administração;Sim;Secretaria Acadêmica;F;Mestrado;1949-06-22
+10095;Diane Keaton;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Graduado;1946-01-05
+10096;Frances Ford Coppola;Não;Professor;Acadêmico;Não;Coordenação de Banco de Dados;F;Pós-Graduado;1953-05-10
+10097;Sissy Spacek;Sim;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1949-12-25
+10098;Jessica Tandy;Não;Secretário;Administração;Não;Secretaria Acadêmica;F;Pós-Graduado;1909-06-07
+10099;Bette Davis;Não;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Graduado;1908-04-05
+10100;Joan Fontaine;Não;Professor;Acadêmico;Não;Coordenação de Banco de Dados;F;Mestrado;1917-10-22
+10101;Iron Man;Sim;Professor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;M;Pós-Doutorado;1970-05-29
+10102;Captain America;Sim;Instrutor;Acadêmico;Não;Coordenação de Banco de Dados;M;Doutorado;1918-07-11
+10103;Thor Odinson;Sim;Professor;Tecnologia;Sim;Departamento de Tecnologia;M;Pós-Doutorado;1955-05-05
+10104;Tiago;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;M;Mestrado;1984-11-03
+10105;Hulk;Sim;Instrutor;Acadêmico;Não;Coordenação de Banco de Dados;M;Doutorado;1969-12-18
+10106;Spider-Man;Sim;Professor;Tecnologia;Não;Departamento de Tecnologia;M;Pós-Graduado;1995-08-10
+10107;Doctor Strange;Sim;Professor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;M;Pós-Doutorado;1963-11-25
+10108;Black Panther;Sim;Instrutor;Acadêmico;Sim;Coordenação de Banco de Dados;M;Doutorado;1977-06-29
+10109;Felipe;Sim;Professor;Tecnologia;Não;Departamento de Tecnologia;M;Pós-Graduado;1989-02-08
+10110;Paulo;Sim;Instrutor;Tecnologia;Não;Departamento de Tecnologia;M;Pós-Doutorado;2015-05-04
+10111;Superman;Sim;Professor;Acadêmico;Sim;Coordenação de Análise e Desenvolvimento de Sistemas;M;Doutorado;1978-06-28
+10112;Batman;Sim;Professor;Acadêmico;Não;Coordenação de Banco de Dados;M;Pós-Doutorado;1972-02-01
+10113;Wonder Woman;Sim;Professor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Mestrado;1984-12-05
+10114;The Flash;Sim;Instrutor;Tecnologia;Não;Departamento de Tecnologia;M;Pós-Graduado;1989-03-13
+10115;Green Lantern;Sim;Professor;Acadêmico;Não;Coordenação de Banco de Dados;M;Doutorado;1981-07-02
+10116;Aquaman;Sim;Instrutor;Recursos Humanos;Não;Departamento de Recursos Humanos;M;Pós-Graduado;1986-11-29
+10117;Pedro;Sim;Auxiliar Administrativo;Administração;Não;Secretaria Acadêmica;M;Graduado;1971-09-19
+10118;Simão;Sim;Professor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;M;Pós-Graduado;1989-04-10
+10119;João;Sim;Instrutor;Tecnologia;Não;Departamento de Tecnologia;M;Pós-Graduado;1977-06-03
+10120;Jesus Emanuel;Sim;Professor;Tecnologia;Não;Departamento de Tecnologia;M;Pós-Graduado;1980-08-05
+10121;Bartolomeu;Sim;Professor;Acadêmico;Não;Coordenação de Banco de Dados;M;Mestrado;1977-04-15
+10122;Clemente;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;M;Pós-Graduado;1985-07-03
+10123;Mateus;Sim;Instrutor;Tecnologia;Não;Departamento de Tecnologia;M;Doutorado;1979-01-01
+10124;Estêvão;Sim;Professor;Tecnologia;Sim;Departamento de Tecnologia;M;Doutorado;1990-02-03
+10125;Marcos;Sim;Instrutor;Acadêmico;Não;Coordenação de Banco de Dados;M;Mestrado;1981-10-12
+10126;Lucas;Sim;Professor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;M;Pós-Graduado;1988-03-15
+10127;André;Sim;Instrutor;Recursos Humanos;Não;Departamento de Recursos Humanos;M;Pós-Graduado;1992-08-10
+10128;Tomás;Sim;Auxiliar Administrativo;Administração;Não;Secretaria Acadêmica;M;Graduado;1988-12-30
+10129;Barnabé;Sim;Secretário;Administração;Não;Secretaria Acadêmica;M;Pós-Graduado;1990-07-09
+10130;Timóteo;Sim;Psicólogo;Recursos Humanos;Não;Departamento de Recursos Humanos;M;Mestrado;1991-05-12
+10139;Stephen Hawking;Não;Instrutor;Acadêmico;Não;Coordenação de Banco de Dados;M;Pós-Doutorado;1942-01-08
+10140;Carl Sagan;Sim;Professor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;M;Doutorado;1934-11-09
