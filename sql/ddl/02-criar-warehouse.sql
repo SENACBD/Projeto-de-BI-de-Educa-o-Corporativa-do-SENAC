@@ -33,28 +33,28 @@ USE mmd_datawarehouse;
 -- 1. DIMENSÃO TEMPO (USAR JUNTO COM PROCEDURE PARA POPULAR)
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS `MMD_facsenac`.`DimTempo` (
-        idDimtempo         INTEGER PRIMARY KEY,  -- year*10000+month*100+day
+CREATE TABLE IF NOT EXISTS dim_tempo (
+        id_tempo            INTEGER PRIMARY KEY,  -- year*10000+month*100+day
         data                DATE NOT NULL,
         ano                 INTEGER NOT NULL,
         mes                 INTEGER NOT NULL, -- 1 to 12
         dia                 INTEGER NOT NULL, -- 1 to 31
         bimestre            INTEGER NOT NULL, -- 1 to 4
         semestre            INTEGER NOT NULL, -- 1 to 4
-        NomeDia             VARCHAR(9) NOT NULL, -- 'Monday', 'Tuesday'...
-        NomeMes             VARCHAR(9) NOT NULL, -- 'January', 'February'...
-        FinaldeSemana       CHAR(1) DEFAULT 'F' CHECK (finaldesemana in ('T', 'F'))
+        nome_dia            VARCHAR(9) NOT NULL, -- 'Monday', 'Tuesday'...
+        nome_mes            VARCHAR(9) NOT NULL, -- 'January', 'February'...
+        final_de_semana     CHAR(1) DEFAULT 'F' CHECK (finaldesemana in ('T', 'F'))
 ) Engine=InnoDB;
 
 
 -- =====================================================
--- 2. DIMENSÃO LOTAÇÃO
+-- 2. DIMENSÃO DEPARTAMENTO
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS dim_lotacao (
-    id_lotacao INT NOT NULL AUTO_INCREMENT,
-    descricao_lotacao VARCHAR(45) NOT NULL,
-    PRIMARY KEY (id_lotacao)
+CREATE TABLE IF NOT EXISTS dim_departamento (
+    id_departamento INT NOT NULL AUTO_INCREMENT,
+    descricao_departamento VARCHAR(45) NOT NULL,
+    PRIMARY KEY (id_departamento)
 ) ENGINE = InnoDB;
 
 
@@ -86,17 +86,16 @@ CREATE TABLE IF NOT EXISTS dim_sexo (
 
 
 -- =====================================================
--- 5. DIMENSÃO CURSO
+-- 5. DIMENSÃO CURSO (TIRAR DÚVIDAS SOBRE SE REMOVO OU SEPARO AS COLUNAS)
 -- =====================================================
 
 CREATE TABLE IF NOT EXISTS dim_curso (
     id_curso INT NOT NULL AUTO_INCREMENT,
     descricao_curso VARCHAR(60) NOT NULL,
-    data_inclusao_curso DATE NOT NULL,
-    carga_horaria_curso INT NOT NULL,
-    situacao_curso VARCHAR(15) NOT NULL
-        COMMENT 'Indica se o curso foi realizado ou não.',
-    valor_contratado_curso DECIMAL(10,2) NOT NULL,
+    data_inclusao_curso DATE NOT NULL DEFAULT (CURRENT_DATE),
+    carga_horaria_curso INT NOT NULL DEFAULT 0,
+    realizado_curso VARCHAR(3) NOT NULL DEFAULT "Não",
+    valor_contratado_curso DECIMAL(10,2) NOT NULL DEFAULT 0.0,
     PRIMARY KEY (id_curso)
 ) ENGINE = InnoDB;
 
@@ -149,10 +148,10 @@ CREATE TABLE IF NOT EXISTS dim_programa (
 -- 10. DIMENSÃO CARGO E FUNÇÃO
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS dim_cargo_funcao (
-    id_cargo_funcao INT NOT NULL AUTO_INCREMENT,
-    descricao_cargo_funcao VARCHAR(45) NOT NULL,
-    PRIMARY KEY (id_cargo_funcao)
+CREATE TABLE IF NOT EXISTS dim_cargo (
+    id_cargo INT NOT NULL AUTO_INCREMENT,
+    descricao_cargo VARCHAR(45) NOT NULL,
+    PRIMARY KEY (id_cargo)
 ) ENGINE = InnoDB;
 
 
@@ -160,7 +159,7 @@ CREATE TABLE IF NOT EXISTS dim_cargo_funcao (
 -- 11. TABELA FATO PARTICIPAÇÃO EM CURSOS
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS fato_participacao_curso (
+CREATE TABLE IF NOT EXISTS fato_participacao (
     id_participacao INT NOT NULL AUTO_INCREMENT,
 
     id_cargo_funcao INT NOT NULL,
