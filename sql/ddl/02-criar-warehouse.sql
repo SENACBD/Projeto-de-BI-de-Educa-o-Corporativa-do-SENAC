@@ -145,7 +145,7 @@ CREATE TABLE IF NOT EXISTS dim_programa (
 
 
 -- =====================================================
--- 10. DIMENSÃO CARGO E FUNÇÃO
+-- 10. DIMENSÃO CARGO
 -- =====================================================
 
 CREATE TABLE IF NOT EXISTS dim_cargo (
@@ -238,7 +238,7 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
 
 -- INSERT PLACEHOLDER: DIM_TEMPO
 
--- INSERT PLACEHOLDER: DIM_LOTACAO
+-- INSERT PLACEHOLDER: DIM_DEPARTAMENTO
 
 -- INSERT PLACEHOLDER: DIM_FUNCIONARIO
 
@@ -254,14 +254,14 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
 
 -- INSERT PLACEHOLDER: DIM_PROGRAMA
 
--- INSERT PLACEHOLDER: DIM_CARGO_FUNCAO
+-- INSERT PLACEHOLDER: DIM_CARGO
 
 
 -- =====================================================
 -- 13. PLACEHOLDER PARA CARGA DA TABELA FATO
 -- =====================================================
 
--- INSERT PLACEHOLDER: FATO_PARTICIPACAO_CURSO
+-- INSERT PLACEHOLDER: FATO_PARTICIPACAO
 
 
 -- =====================================================
