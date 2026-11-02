@@ -92,10 +92,10 @@ CREATE TABLE IF NOT EXISTS dim_sexo (
 CREATE TABLE IF NOT EXISTS dim_curso (
     id_curso INT NOT NULL AUTO_INCREMENT,
     descricao_curso VARCHAR(60) NOT NULL,
-    data_inclusao_curso DATE NOT NULL DEFAULT (CURRENT_DATE),
-    carga_horaria_curso INT NOT NULL DEFAULT 0,
-    realizado_curso VARCHAR(3) NOT NULL DEFAULT "Não",
-    valor_contratado_curso DECIMAL(10,2) NOT NULL DEFAULT 0.0,
+    data_inclusao_curso DATE DEFAULT NULL,
+    carga_horaria_curso INT DEFAULT NULL,
+    realizado_curso VARCHAR(3) DEFAULT NULL,
+    valor_contratado_curso DECIMAL(10,2) DEFAULT NULL,
     PRIMARY KEY (id_curso)
 ) ENGINE = InnoDB;
 

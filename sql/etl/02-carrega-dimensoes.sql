@@ -1,18 +1,4 @@
--- ----------------------------
--- Dimensão Sexo
--- ----------------------------
 
-use mmd_datawarehouse;
--- delete from dim_sexo;
-
-insert into dim_sexo (
-  id_sexo,
-  descricao_sexo)
-values
-("F"),
-("M");
-
-select * from mmd_datawarehouse.dim_sexo;
 
 
 -- ----------------------------
@@ -75,6 +61,20 @@ select * from mmd_datawarehouse.dim_cargo;
 
 
 -- ----------------------------
+-- Dimensão Curso
+-- ----------------------------
+
+use mmd_datawarehouse;
+-- delete from DimCurso;
+
+insert into mmd_datawarehouse.dim_curso (descricao_curso) 
+select distinct descricao_curso 
+from mmd_staging.dataset_participacaocurso_limpo;
+
+SELECT * FROM  mmd_datawarehouse.dim_curso;
+
+
+-- ----------------------------
 -- Dimensão Formato
 -- ----------------------------
 
@@ -125,6 +125,23 @@ values
 select * from mmd_datawarehouse.dim_programa;
 
 
+-- ----------------------------
+-- Dimensão Sexo
+-- ----------------------------
+
+use mmd_datawarehouse;
+-- delete from dim_sexo;
+
+insert into dim_sexo (
+  id_sexo,
+  descricao_sexo)
+values
+("F"),
+("M");
+
+select * from mmd_datawarehouse.dim_sexo;
+
+
 /*
 -- ----------------------------
 -- Dimensão Área
@@ -158,18 +175,7 @@ select * from mmd_datawarehouse.dim_area;
 
 
 
--- ----------------------------
--- Dimensão Curso
--- ----------------------------
 
-use mmd_datawarehouse;
--- delete from DimCurso;
-
-insert into mmd_datawarehouse.dim_curso (descricao_curso) 
-select distinct nome_curso 
-from mmd_staging.dataset_participacaocurso_limpo;
-
-SELECT * FROM  mmd_datawarehouse.dim_curso;
 
 
 
