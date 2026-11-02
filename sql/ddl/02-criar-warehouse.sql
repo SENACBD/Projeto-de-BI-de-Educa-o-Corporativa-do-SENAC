@@ -30,16 +30,17 @@ USE mmd_datawarehouse;
 
 
 -- =====================================================
--- 1. DIMENSÃO TEMPO
+-- 1. DIMENSÃO TEMPO (USAR PROCEDURE AO INVÉS DISSO)
 -- =====================================================
 
+/*
 CREATE TABLE IF NOT EXISTS dim_tempo (
     id_tempo INT NOT NULL AUTO_INCREMENT,
     mes INT NOT NULL,
     ano INT NOT NULL,
     PRIMARY KEY (id_tempo)
 ) ENGINE = InnoDB;
-
+*/
 
 -- =====================================================
 -- 2. DIMENSÃO LOTAÇÃO
