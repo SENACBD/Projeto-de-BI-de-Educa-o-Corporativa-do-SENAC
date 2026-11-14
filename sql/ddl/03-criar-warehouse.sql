@@ -33,17 +33,18 @@ USE mmd_datawarehouse;
 -- 1. DIMENSÃO TEMPO (USAR JUNTO COM PROCEDURE PARA POPULAR)
 -- =====================================================
 
+DROP TABLE IF EXISTS dim_tempo;
 CREATE TABLE IF NOT EXISTS dim_tempo (
         id_tempo            INTEGER PRIMARY KEY,  -- year*10000+month*100+day
         data                DATE NOT NULL,
         ano                 INTEGER NOT NULL,
         mes                 INTEGER NOT NULL, -- 1 to 12
         dia                 INTEGER NOT NULL, -- 1 to 31
-        bimestre            INTEGER NOT NULL, -- 1 to 4
-        semestre            INTEGER NOT NULL, -- 1 to 4
+        bimestre            INTEGER NOT NULL, -- 1 to 6
+        semestre            INTEGER NOT NULL, -- 1 to 2
         nome_dia            VARCHAR(9) NOT NULL, -- 'Monday', 'Tuesday'...
         nome_mes            VARCHAR(9) NOT NULL, -- 'January', 'February'...
-        final_de_semana     CHAR(1) DEFAULT 'F' CHECK (finaldesemana in ('T', 'F'))
+        final_de_semana     CHAR(1) DEFAULT 'F' CHECK (final_de_semana in ('T', 'F'))
 ) Engine=InnoDB;
 
 
