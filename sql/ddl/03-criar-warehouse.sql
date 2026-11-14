@@ -3,7 +3,6 @@
 -- PROJETO EDUCAÇÃO CORPORATIVA - SENAC
 -- CRIAÇÃO DA ESTRUTURA DO BANCO DE DADOS DIMENSIONAL
 -- MySQL 8.0
--- Uso: MySQL Workbench > executar query > Database > Reverse Engineer
 -- Geração: MySQL Workbench > Database > Forward Engineer
 -- =====================================================
 
@@ -23,15 +22,12 @@ SET @OLD_SQL_MODE = @@SQL_MODE,
 -- 0. CRIAÇÃO DO BANCO
 -- =====================================================
 
-DROP DATABASE IF EXISTS mmd_datawarehouse;
+-- DROP DATABASE IF EXISTS mmd_datawarehouse;
 CREATE DATABASE IF NOT EXISTS mmd_datawarehouse
 DEFAULT CHARACTER SET utf8mb4
 COLLATE utf8mb4_0900_ai_ci;
 
 USE mmd_datawarehouse;
-
-CREATE SCHEMA IF NOT EXISTS `modelo` DEFAULT CHARACTER SET utf8 ;
-USE `modelo`;
 
 -- =====================================================
 -- 1. DIMENSÃO TEMPO (USAR JUNTO COM PROCEDURE PARA POPULAR)
