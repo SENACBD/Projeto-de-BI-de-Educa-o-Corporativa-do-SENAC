@@ -8,7 +8,6 @@ use mmd_datawarehouse;
 -- delete from dim_cargo;
 
 insert into dim_cargo (
-  id_cargo,
   descricao_cargo)
 values
 ("Auxiliar Administrativo"),
