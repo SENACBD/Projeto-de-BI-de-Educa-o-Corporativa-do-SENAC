@@ -52,27 +52,32 @@ CREATE TABLE IF NOT EXISTS dim_tempo (
 -- 2. DIMENSÃO DEPARTAMENTO
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS dim_departamento (
-    id_departamento INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE dim_departamento (
+    id_departamento INT AUTO_INCREMENT,
     descricao_departamento VARCHAR(45) NOT NULL,
-    PRIMARY KEY (id_departamento)
-) ENGINE = InnoDB;
+
+    PRIMARY KEY (id_departamento),
+    UNIQUE KEY uk_departamento (descricao_departamento)
+);
 
 
 -- =====================================================
 -- 3. DIMENSÃO FUNCIONÁRIO
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS dim_funcionario (
-    id_funcionario INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE dim_funcionario (
+    id_funcionario INT AUTO_INCREMENT,
     cod_matricula INT NOT NULL,
     nome_funcionario VARCHAR(60) NOT NULL,
     situacao_funcionario VARCHAR(10) NOT NULL,
     area_funcionario VARCHAR(30) NOT NULL,
     chefe_funcionario VARCHAR(3) NOT NULL,
     grau_instrucao_funcionario VARCHAR(15) NOT NULL,
-    nascimento_funcionario DATE NOT NULL
-) ENGINE = InnoDB;
+    nascimento_funcionario DATE NOT NULL,
+
+    PRIMARY KEY (id_funcionario),
+    UNIQUE KEY uk_funcionario_matricula (cod_matricula)
+);
 
 
 -- =====================================================
@@ -82,7 +87,9 @@ CREATE TABLE IF NOT EXISTS dim_funcionario (
 CREATE TABLE IF NOT EXISTS dim_sexo (
     id_sexo INT NOT NULL AUTO_INCREMENT,
     descricao_sexo VARCHAR(1) NOT NULL,
-    PRIMARY KEY (id_sexo)
+    
+    PRIMARY KEY (id_sexo),
+	UNIQUE KEY uk_dim_sexo (cod_sexo)
 ) ENGINE = InnoDB;
 
 
@@ -90,14 +97,18 @@ CREATE TABLE IF NOT EXISTS dim_sexo (
 -- 5. DIMENSÃO CURSO (TIRAR DÚVIDAS SOBRE SE REMOVO OU SEPARO AS COLUNAS)
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS dim_curso (
+CREATE TABLE dim_curso (
     id_curso INT NOT NULL AUTO_INCREMENT,
+    cod_curso VARCHAR(30) NOT NULL,
     descricao_curso VARCHAR(60) NOT NULL,
     data_inclusao_curso DATE DEFAULT NULL,
     carga_horaria_curso INT DEFAULT NULL,
     realizado_curso VARCHAR(3) DEFAULT NULL,
     valor_contratado_curso DECIMAL(10,2) DEFAULT NULL,
-    PRIMARY KEY (id_curso)
+
+    PRIMARY KEY (id_curso),
+    UNIQUE KEY uk_dim_curso_cod (cod_curso)
+
 ) ENGINE = InnoDB;
 
 
@@ -105,10 +116,12 @@ CREATE TABLE IF NOT EXISTS dim_curso (
 -- 6. DIMENSÃO FORMATO
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS dim_formato (
+CREATE TABLE dim_formato (
     id_formato INT NOT NULL AUTO_INCREMENT,
     descricao_formato VARCHAR(10) NOT NULL,
-    PRIMARY KEY (id_formato)
+    
+    PRIMARY KEY (id_formato),
+    UNIQUE KEY uk_formato (descricao_formato)
 ) ENGINE = InnoDB;
 
 
@@ -116,10 +129,12 @@ CREATE TABLE IF NOT EXISTS dim_formato (
 -- 7. DIMENSÃO CATEGORIA
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS dim_categoria (
+CREATE TABLE dim_categoria (
     id_categoria INT NOT NULL AUTO_INCREMENT,
     descricao_categoria VARCHAR(15) NOT NULL,
-    PRIMARY KEY (id_categoria)
+    
+    PRIMARY KEY (id_categoria),
+	UNIQUE KEY uk_categoria (descricao_categoria)
 ) ENGINE = InnoDB;
 
 
@@ -127,10 +142,12 @@ CREATE TABLE IF NOT EXISTS dim_categoria (
 -- 8. DIMENSÃO MODALIDADE
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS dim_modalidade (
+CREATE TABLE dim_modalidade (
     id_modalidade INT NOT NULL AUTO_INCREMENT,
     descricao_modalidade VARCHAR(10) NOT NULL,
-    PRIMARY KEY (id_modalidade)
+    
+    PRIMARY KEY (id_modalidade),
+    UNIQUE KEY uk_modalidade (descricao_modalidade)
 ) ENGINE = InnoDB;
 
 
@@ -138,22 +155,26 @@ CREATE TABLE IF NOT EXISTS dim_modalidade (
 -- 9. DIMENSÃO PROGRAMA
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS dim_programa (
-    id_programa INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE dim_programa (
+    id_programa INT AUTO_INCREMENT,
     descricao_programa VARCHAR(50) NOT NULL,
-    PRIMARY KEY (id_programa)
-) ENGINE = InnoDB;
+
+    PRIMARY KEY (id_programa),
+    UNIQUE KEY uk_programa (descricao_programa)
+);
 
 
 -- =====================================================
 -- 10. DIMENSÃO CARGO
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS dim_cargo (
-    id_cargo INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE dim_cargo (
+    id_cargo INT AUTO_INCREMENT,
     descricao_cargo VARCHAR(45) NOT NULL,
-    PRIMARY KEY (id_cargo)
-) ENGINE = InnoDB;
+
+    PRIMARY KEY (id_cargo),
+    UNIQUE KEY uk_cargo (descricao_cargo)
+);
 
 
 -- =====================================================
@@ -177,7 +198,7 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
 
     
     id_tempo_inicio INT NOT NULL,
-    id_tempo_conclusao INT NOT NULL,
+    id_tempo_conclusao INT NULL,
 
     PRIMARY KEY (id_participacao),
 
