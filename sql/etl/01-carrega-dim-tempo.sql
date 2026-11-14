@@ -8,8 +8,8 @@ CREATE TABLE IF NOT EXISTS dim_tempo (
         ano                 INTEGER NOT NULL,
         mes                 INTEGER NOT NULL, -- 1 to 12
         dia                 INTEGER NOT NULL, -- 1 to 31
-        bimestre            INTEGER NOT NULL, -- 1 to 2
-        semestre            INTEGER NOT NULL, -- 1 to 6
+        bimestre            INTEGER NOT NULL, -- 1 to 6
+        semestre            INTEGER NOT NULL, -- 1 to 2
         nome_dia            VARCHAR(9) NOT NULL, -- 'Monday', 'Tuesday'...
         nome_mes            VARCHAR(9) NOT NULL, -- 'January', 'February'...
         final_de_semana     CHAR(1) DEFAULT 'F' CHECK (final_de_semana in ('T', 'F'))
