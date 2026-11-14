@@ -1,5 +1,7 @@
 -- Script responsável pela população da Dimensão Tempo
 
+-- Meu: Talvez usar caso formatação dê erro: SET lc_time_names = 'pt_BR';
+
 /* Não utilizar os comandos comentados a não ser que Dim Tempo não tenha sido criado em 02-criar-warehouse.sql
 DROP TABLE IF EXISTS dim_tempo;
 CREATE TABLE IF NOT EXISTS dim_tempo (
