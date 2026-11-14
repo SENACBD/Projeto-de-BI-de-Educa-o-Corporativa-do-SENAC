@@ -63,7 +63,8 @@ CREATE TABLE IF NOT EXISTS dim_departamento (
 -- =====================================================
 
 CREATE TABLE IF NOT EXISTS dim_funcionario (
-    id_matricula INT NOT NULL AUTO_INCREMENT,
+    id_funcionario INT AUTO_INCREMENT PRIMARY KEY,
+    cod_matricula INT NOT NULL,
     nome_funcionario VARCHAR(60) NOT NULL,
     situacao_funcionario VARCHAR(10) NOT NULL,
     area_funcionario VARCHAR(30) NOT NULL,
@@ -162,11 +163,11 @@ CREATE TABLE IF NOT EXISTS dim_cargo (
 CREATE TABLE IF NOT EXISTS fato_participacao (
     id_participacao INT NOT NULL AUTO_INCREMENT,
 
-    id_cargo_funcao INT NOT NULL,
+    id_cargo INT NOT NULL,
     id_categoria INT NOT NULL,
     id_curso INT NOT NULL,
     id_formato INT NOT NULL,
-    id_lotacao INT NOT NULL,
+    id_departamento INT NOT NULL,
     id_matricula INT NOT NULL,
     id_modalidade INT NOT NULL,
     id_programa INT NOT NULL,
@@ -178,11 +179,11 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
 
     PRIMARY KEY (id_participacao),
 
-    INDEX idx_fato_cargo (id_cargo_funcao),
+    INDEX idx_fato_cargo (id_cargo),
     INDEX idx_fato_categoria (id_categoria),
     INDEX idx_fato_curso (id_curso),
     INDEX idx_fato_formato (id_formato),
-    INDEX idx_fato_lotacao (id_lotacao),
+    INDEX idx_fato_departamento (id_departamento),
     INDEX idx_fato_funcionario (id_matricula),
     INDEX idx_fato_modalidade (id_modalidade),
     INDEX idx_fato_programa (id_programa),
@@ -190,8 +191,8 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
     INDEX idx_fato_tempo (id_tempo),
 
     CONSTRAINT fk_fato_cargo
-        FOREIGN KEY (id_cargo_funcao)
-        REFERENCES dim_cargo_funcao (id_cargo_funcao),
+        FOREIGN KEY (id_cargo)
+        REFERENCES dim_cargo (id_cargo),
 
     CONSTRAINT fk_fato_categoria
         FOREIGN KEY (id_categoria)
@@ -205,9 +206,9 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
         FOREIGN KEY (id_formato)
         REFERENCES dim_formato (id_formato),
 
-    CONSTRAINT fk_fato_lotacao
-        FOREIGN KEY (id_lotacao)
-        REFERENCES dim_lotacao (id_lotacao),
+    CONSTRAINT fk_fato_departamento
+        FOREIGN KEY (id_departamento)
+        REFERENCES dim_departamento (id_departamento),
 
     CONSTRAINT fk_fato_funcionario
         FOREIGN KEY (id_matricula)
