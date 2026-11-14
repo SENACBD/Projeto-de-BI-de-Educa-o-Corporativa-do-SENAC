@@ -174,8 +174,10 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
     id_sexo INT NOT NULL,
     id_tempo INT NOT NULL,
 
-    data_inicio DATE NOT NULL,
-    data_conclusao DATE NOT NULL,
+
+    
+    id_tempo_inicio INT NOT NULL,
+    id_tempo_conclusao INT NOT NULL,
 
     PRIMARY KEY (id_participacao),
 
@@ -229,6 +231,14 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
     CONSTRAINT fk_fato_tempo
         FOREIGN KEY (id_tempo)
         REFERENCES dim_tempo (id_tempo)
+
+
+    
+    FOREIGN KEY (id_tempo_inicio)
+        REFERENCES dim_tempo(id_tempo),
+
+    FOREIGN KEY (id_tempo_conclusao)
+        REFERENCES dim_tempo(id_tempo)
 
 ) ENGINE = InnoDB;
 
