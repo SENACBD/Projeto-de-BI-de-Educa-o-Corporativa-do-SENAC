@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS dim_tempo (
         semestre            INTEGER NOT NULL, -- 1 to 6
         nome_dia            VARCHAR(9) NOT NULL, -- 'Monday', 'Tuesday'...
         nome_mes            VARCHAR(9) NOT NULL, -- 'January', 'February'...
-        final_de_semana     CHAR(1) DEFAULT 'F' CHECK (finaldesemana in ('T', 'F'))
+        final_de_semana     CHAR(1) DEFAULT 'F' CHECK (final_de_semana in ('T', 'F'))
 ) Engine=InnoDB;
 */
 
