@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS dim_tempo (
 
 CREATE TABLE dim_departamento (
     id_departamento INT AUTO_INCREMENT,
-    descricao_departamento VARCHAR(45) NOT NULL,
+    descricao_departamento VARCHAR(60) NOT NULL,
 
     PRIMARY KEY (id_departamento),
     UNIQUE KEY uk_departamento (descricao_departamento)
@@ -73,7 +73,7 @@ CREATE TABLE dim_funcionario (
     area_funcionario VARCHAR(30) NOT NULL,
     chefe_funcionario VARCHAR(3) NOT NULL,
     grau_instrucao_funcionario VARCHAR(15) NOT NULL,
-    nascimento_funcionario DATE NOT NULL,
+    nascimento_funcionario DATE DEFAULT NULL,
 
     PRIMARY KEY (id_funcionario),
     UNIQUE KEY uk_funcionario_matricula (cod_matricula)
@@ -193,7 +193,7 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
     id_modalidade INT NOT NULL,
     id_programa INT NOT NULL,
     id_sexo INT NOT NULL,
-    id_tempo INT NOT NULL,
+--    id_tempo INT NOT NULL,
 
 
     
@@ -211,7 +211,7 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
     INDEX idx_fato_modalidade (id_modalidade),
     INDEX idx_fato_programa (id_programa),
     INDEX idx_fato_sexo (id_sexo),
-    INDEX idx_fato_tempo (id_tempo),
+--    INDEX idx_fato_tempo (id_tempo),
 
     CONSTRAINT fk_fato_cargo
         FOREIGN KEY (id_cargo)
@@ -249,9 +249,9 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
         FOREIGN KEY (id_sexo)
         REFERENCES dim_sexo (id_sexo),
 
-    CONSTRAINT fk_fato_tempo
-        FOREIGN KEY (id_tempo)
-        REFERENCES dim_tempo (id_tempo),
+--    CONSTRAINT fk_fato_tempo
+--        FOREIGN KEY (id_tempo)
+---        REFERENCES dim_tempo (id_tempo),
 
 
     
