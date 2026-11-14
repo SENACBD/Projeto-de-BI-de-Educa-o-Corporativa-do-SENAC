@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS dim_modalidade (
 
 CREATE TABLE IF NOT EXISTS dim_programa (
     id_programa INT NOT NULL AUTO_INCREMENT,
-    descricao_programa VARCHAR(3) NOT NULL,
+    descricao_programa VARCHAR(50) NOT NULL,
     PRIMARY KEY (id_programa)
 ) ENGINE = InnoDB;
 
