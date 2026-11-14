@@ -4,6 +4,7 @@
 -- CRIAÇÃO DO BANCO DE DADOS DE STAGING PARA POSSIBILITAR
 -- IMPORTAÇÃO DOS CSVs PELO Table Data Import Wizard
 -- MySQL 8.0
+-- Uso: MySQL Workbench > executar query
 -- =====================================================
 
 

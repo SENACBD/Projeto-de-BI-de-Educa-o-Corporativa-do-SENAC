@@ -3,6 +3,7 @@
 -- PROJETO EDUCAÇÃO CORPORATIVA - SENAC
 -- CRIAÇÃO E POPULAÇÃO DAS TABELAS DE STAGING
 -- MySQL 8.0
+-- Uso: MySQL Workbench > selecionar database > Table Data Import Wizard
 -- Geração: MySQL Workbench > Server > Data Export
 -- =====================================================
 

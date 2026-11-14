@@ -3,6 +3,7 @@
 -- PROJETO EDUCAÇÃO CORPORATIVA - SENAC
 -- CRIAÇÃO DA ESTRUTURA DO BANCO DE DADOS DIMENSIONAL
 -- MySQL 8.0
+-- Uso: MySQL Workbench > executar query > Database > Reverse Engineer
 -- Geração: MySQL Workbench > Database > Forward Engineer
 -- =====================================================
 
