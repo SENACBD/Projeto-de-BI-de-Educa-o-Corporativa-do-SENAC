@@ -22,12 +22,15 @@ SET @OLD_SQL_MODE = @@SQL_MODE,
 -- 0. CRIAÇÃO DO BANCO
 -- =====================================================
 
+DROP DATABASE IF EXISTS mmd_datawarehouse;
 CREATE DATABASE IF NOT EXISTS mmd_datawarehouse
 DEFAULT CHARACTER SET utf8mb4
 COLLATE utf8mb4_0900_ai_ci;
 
 USE mmd_datawarehouse;
 
+CREATE SCHEMA IF NOT EXISTS `modelo` DEFAULT CHARACTER SET utf8 ;
+USE `modelo`;
 
 -- =====================================================
 -- 1. DIMENSÃO TEMPO (USAR JUNTO COM PROCEDURE PARA POPULAR)
@@ -71,8 +74,7 @@ CREATE TABLE IF NOT EXISTS dim_funcionario (
     area_funcionario VARCHAR(30) NOT NULL,
     chefe_funcionario VARCHAR(3) NOT NULL,
     grau_instrucao_funcionario VARCHAR(15) NOT NULL,
-    nascimento_funcionario DATE NOT NULL,
-    PRIMARY KEY (id_matricula)
+    nascimento_funcionario DATE NOT NULL
 ) ENGINE = InnoDB;
 
 
@@ -169,7 +171,7 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
     id_curso INT NOT NULL,
     id_formato INT NOT NULL,
     id_departamento INT NOT NULL,
-    id_matricula INT NOT NULL,
+    id_funcionario INT NOT NULL,
     id_modalidade INT NOT NULL,
     id_programa INT NOT NULL,
     id_sexo INT NOT NULL,
@@ -187,7 +189,7 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
     INDEX idx_fato_curso (id_curso),
     INDEX idx_fato_formato (id_formato),
     INDEX idx_fato_departamento (id_departamento),
-    INDEX idx_fato_funcionario (id_matricula),
+    INDEX idx_fato_funcionario (id_funcionario),
     INDEX idx_fato_modalidade (id_modalidade),
     INDEX idx_fato_programa (id_programa),
     INDEX idx_fato_sexo (id_sexo),
@@ -214,8 +216,8 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
         REFERENCES dim_departamento (id_departamento),
 
     CONSTRAINT fk_fato_funcionario
-        FOREIGN KEY (id_matricula)
-        REFERENCES dim_funcionario (id_matricula),
+        FOREIGN KEY (id_funcionario)
+        REFERENCES dim_funcionario (id_funcionario),
 
     CONSTRAINT fk_fato_modalidade
         FOREIGN KEY (id_modalidade)
@@ -231,7 +233,7 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
 
     CONSTRAINT fk_fato_tempo
         FOREIGN KEY (id_tempo)
-        REFERENCES dim_tempo (id_tempo)
+        REFERENCES dim_tempo (id_tempo),
 
 
     
