@@ -8,8 +8,8 @@ CREATE TABLE IF NOT EXISTS dim_tempo (
         ano                 INTEGER NOT NULL,
         mes                 INTEGER NOT NULL, -- 1 to 12
         dia                 INTEGER NOT NULL, -- 1 to 31
-        bimestre            INTEGER NOT NULL, -- 1 to 4
-        semestre            INTEGER NOT NULL, -- 1 to 4
+        bimestre            INTEGER NOT NULL, -- 1 to 2
+        semestre            INTEGER NOT NULL, -- 1 to 6
         nome_dia            VARCHAR(9) NOT NULL, -- 'Monday', 'Tuesday'...
         nome_mes            VARCHAR(9) NOT NULL, -- 'January', 'February'...
         final_de_semana     CHAR(1) DEFAULT 'F' CHECK (finaldesemana in ('T', 'F'))
@@ -42,6 +42,6 @@ END
 DELIMITER ;
 
 -- delete from  dim_tempo;
-CALL carga_dimensao_tempo('2023-01-01','2023-12-31');
+CALL carga_dimensao_tempo('2024-01-01','2026-12-31');
 
 Select * from dim_tempo limit 1000;
