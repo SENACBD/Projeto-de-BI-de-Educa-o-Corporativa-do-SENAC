@@ -6,7 +6,7 @@
 -- Geração: MySQL Workbench > Database > Forward Engineer
 -- =====================================================
 
--- CONFIGURACOES INICIAIS
+-- CONFIGURAÇÕES INICIAIS
 
 SET @OLD_UNIQUE_CHECKS = @@UNIQUE_CHECKS,
     UNIQUE_CHECKS = 0;

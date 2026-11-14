@@ -43,7 +43,7 @@ END
 //
 DELIMITER ;
 
--- delete from  dim_tempo;
+-- delete from dim_tempo;
 CALL carga_dimensao_tempo('2024-01-01','2026-12-31');
 
 Select * from dim_tempo limit 1000;
