@@ -1,182 +1,250 @@
--- Script responsável por popular o Modelo Fato Dimensão!
 
--- ----------------------------
--- Dimensão Cargo
--- ----------------------------
-
-use mmd_datawarehouse;
--- delete from dim_cargo;
-
-insert into dim_cargo (
-  descricao_cargo)
-values
-("Auxiliar Administrativo"),
-("Instrutor"),
-("Professor"),
-("Psicólogo"),
-("Secretário");
-
-select * from mmd_datawarehouse.dim_cargo;
-
-
--- ----------------------------
--- Dimensão Categoria
--- ----------------------------
-
-use mmd_datawarehouse;
--- delete from dim_categoria;
-
-insert into dim_categoria (
-  id_categoria,
-  descricao_categoria)
-values
-("GERENCIAL"),
-("PESSOAL"),
-("TÉCNICO"),
-("TRANSVERSAL");
-
-select * from mmd_datawarehouse.dim_categoria;
-
-
--- ----------------------------
--- Dimensão Curso
--- ----------------------------
-
-use mmd_datawarehouse;
--- delete from DimCurso;
-
-insert into mmd_datawarehouse.dim_curso (descricao_curso) 
-select distinct descricao_curso 
-from mmd_staging.dataset_participacaocurso_limpo;
-
-SELECT * FROM  mmd_datawarehouse.dim_curso;
-
-
--- ----------------------------
--- Dimensão Departamento
--- ----------------------------
-
-use mmd_datawarehouse;
--- delete from dim_departamento;
-
-insert into dim_departamento (
-  id_departamento,
-  descricao_departamento)
-values
-("Coordenação de Análise e Desenvolvimento de Sistemas"),
-("Coordenação de Banco de Dados"),
-("Departamento de Recursos Humanos"),
-("Departamento de Tecnologia"),
-("Secretaria Acadêmica");
-
-select * from mmd_datawarehouse.dim_departamento;
-
-
--- ----------------------------
--- Dimensão Formato
--- ----------------------------
-
-use mmd_datawarehouse;
--- delete from dim_formato;
-
-insert into dim_formato (
-  id_formato,
-  descricao_formato)
-values
-("EXTERNO"),
-("INTERNO");
-
-select * from mmd_datawarehouse.dim_formato;
-
-
--- ----------------------------
--- Dimensão Modalidade
--- ----------------------------
-
-use mmd_datawarehouse;
--- delete from dim_modalidade;
-
-insert into dim_modalidade (
-  id_modalidade,
-  descricao_modalidade)
-values
-("PRESENCIAL"),
-("EAD");
-
-select * from mmd_datawarehouse.dim_modalidade;
-
-
--- ----------------------------
--- Dimensão Programa
--- ----------------------------
-
-use mmd_datawarehouse;
--- delete from dim_programa;
-
-insert into dim_programa (
-  id_programa,
-  descricao_programa)
-values
-("Programa de Desenvolvimento de Líderes"),
-("Programa de Desenvolvimento de Sucessores");
-
-select * from mmd_datawarehouse.dim_programa;
-
-
--- ----------------------------
--- Dimensão Sexo
--- ----------------------------
-
-use mmd_datawarehouse;
--- delete from dim_sexo;
-
-insert into dim_sexo (
-  id_sexo,
-  descricao_sexo)
-values
-("F"),
-("M");
-
-select * from mmd_datawarehouse.dim_sexo;
-
-
-/*
--- ----------------------------
--- Dimensão Área
--- ----------------------------
-
-use mmd_datawarehouse;
--- delete from dim_area;
-
-insert into dim_area (
-  id_area,
-  descricao_area)
-values
-(1, "Acadêmico"),
-(2, "Administração"),
-(3, "Recursos Humanos"),
-(4, "Tecnologia");
-
-select * from mmd_datawarehouse.dim_area;
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-- =====================================================
+-- PROJETO EDUCAÇÃO CORPORATIVA - SENAC
+-- CARGA DAS DIMENSÕES DO DATA WAREHOUSE
+-- MySQL 8.0
+-- =====================================================
+
+USE mmd_datawarehouse;
+
+-- =====================================================
+-- 1. DIMENSÃO CARGO
+-- Origem: funcionario_limpo
+-- =====================================================
+
+INSERT INTO dim_cargo (descricao_cargo)
+SELECT DISTINCT TRIM(f.CARGO)
+FROM mmd_staging.funcionario_limpo f
+WHERE f.CARGO IS NOT NULL
+  AND TRIM(f.CARGO) <> ''
+  AND NOT EXISTS (
+      SELECT 1
+      FROM dim_cargo d
+      WHERE d.descricao_cargo = TRIM(f.CARGO)
+  );
+
+
+-- =====================================================
+-- 2. DIMENSÃO CATEGORIA
+-- Origem: curso_limpo
+-- =====================================================
+
+INSERT INTO dim_categoria (descricao_categoria)
+SELECT DISTINCT TRIM(c.CATEGORIA)
+FROM mmd_staging.curso_limpo c
+WHERE c.CATEGORIA IS NOT NULL
+  AND TRIM(c.CATEGORIA) <> ''
+  AND NOT EXISTS (
+      SELECT 1
+      FROM dim_categoria d
+      WHERE d.descricao_categoria = TRIM(c.CATEGORIA)
+  );
+
+
+-- =====================================================
+-- 3. DIMENSÃO CURSO
+-- Origem: curso_limpo
+-- IMPORTANTE: id_curso é automático.
+-- cod_curso é a chave natural.
+-- =====================================================
+
+INSERT INTO dim_curso (
+    cod_curso,
+    descricao_curso,
+    data_inclusao_curso,
+    carga_horaria_curso,
+    realizado_curso,
+    valor_contratado_curso
+)
+SELECT
+    TRIM(c.COD_CURSO),
+    TRIM(c.DESCRICAO_CURSO),
+    STR_TO_DATE(c.DATA_INCLUSAO, '%Y-%m-%d'),
+    c.CARGA_HORARIA,
+    TRIM(c.CURSO_REALIZADO),
+    c.VALOR
+FROM mmd_staging.curso_limpo c
+WHERE c.COD_CURSO IS NOT NULL
+  AND TRIM(c.COD_CURSO) <> ''
+  AND NOT EXISTS (
+      SELECT 1
+      FROM dim_curso d
+      WHERE d.cod_curso = TRIM(c.COD_CURSO)
+  );
+
+
+-- =====================================================
+-- 4. DIMENSÃO DEPARTAMENTO
+-- Origem: funcionario_limpo e participacaocurso_limpo
+-- =====================================================
+
+INSERT INTO dim_departamento (descricao_departamento)
+SELECT DISTINCT x.departamento
+FROM (
+    SELECT TRIM(DEPARTAMENTO) AS departamento
+    FROM mmd_staging.funcionario_limpo
+
+    UNION
+
+    SELECT TRIM(DEPARTAMENTO) AS departamento
+    FROM mmd_staging.participacaocurso_limpo
+) x
+WHERE x.departamento IS NOT NULL
+  AND x.departamento <> ''
+  AND NOT EXISTS (
+      SELECT 1
+      FROM dim_departamento d
+      WHERE d.descricao_departamento = x.departamento
+  );
+
+
+-- =====================================================
+-- 5. DIMENSÃO FORMATO
+-- Origem: curso_limpo
+-- =====================================================
+
+INSERT INTO dim_formato (descricao_formato)
+SELECT DISTINCT TRIM(c.FORMATO)
+FROM mmd_staging.curso_limpo c
+WHERE c.FORMATO IS NOT NULL
+  AND TRIM(c.FORMATO) <> ''
+  AND NOT EXISTS (
+      SELECT 1
+      FROM dim_formato d
+      WHERE d.descricao_formato = TRIM(c.FORMATO)
+  );
+
+
+-- =====================================================
+-- 6. DIMENSÃO MODALIDADE
+-- Origem: curso_limpo
+-- =====================================================
+
+INSERT INTO dim_modalidade (descricao_modalidade)
+SELECT DISTINCT TRIM(c.MODALIDADE)
+FROM mmd_staging.curso_limpo c
+WHERE c.MODALIDADE IS NOT NULL
+  AND TRIM(c.MODALIDADE) <> ''
+  AND NOT EXISTS (
+      SELECT 1
+      FROM dim_modalidade d
+      WHERE d.descricao_modalidade = TRIM(c.MODALIDADE)
+  );
+
+
+-- =====================================================
+-- 7. DIMENSÃO PROGRAMA
+-- Origem: curso_limpo
+-- =====================================================
+
+INSERT INTO dim_programa (descricao_programa)
+SELECT DISTINCT TRIM(c.PROGRAMA)
+FROM mmd_staging.curso_limpo c
+WHERE c.PROGRAMA IS NOT NULL
+  AND TRIM(c.PROGRAMA) <> ''
+  AND NOT EXISTS (
+      SELECT 1
+      FROM dim_programa d
+      WHERE d.descricao_programa = TRIM(c.PROGRAMA)
+  );
+
+
+-- =====================================================
+-- 8. DIMENSÃO SEXO
+-- Origem: funcionario_limpo
+-- =====================================================
+
+INSERT INTO dim_sexo (descricao_sexo)
+SELECT DISTINCT UPPER(TRIM(f.SEXO))
+FROM mmd_staging.funcionario_limpo f
+WHERE f.SEXO IS NOT NULL
+  AND TRIM(f.SEXO) <> ''
+  AND NOT EXISTS (
+      SELECT 1
+      FROM dim_sexo d
+      WHERE d.descricao_sexo = UPPER(TRIM(f.SEXO))
+  );
+
+
+-- =====================================================
+-- 9. DIMENSÃO FUNCIONÁRIO
+-- Origem: funcionario_limpo
+-- =====================================================
+
+INSERT INTO dim_funcionario (
+    cod_matricula,
+    nome_funcionario,
+    situacao_funcionario,
+    area_funcionario,
+    chefe_funcionario,
+    grau_instrucao_funcionario,
+    nascimento_funcionario
+)
+SELECT
+    f.COD_MATRICULA,
+    TRIM(f.NOME_FUNCIONARIO),
+    TRIM(f.MATRICULA_ATIVA),
+    TRIM(f.AREA),
+    TRIM(f.CHEFE),
+    TRIM(f.GRAU_INSTRUCAO),
+    STR_TO_DATE(f.DATA_NASCIMENTO, '%Y-%m-%d')
+FROM mmd_staging.funcionario_limpo f
+WHERE f.COD_MATRICULA IS NOT NULL
+  AND NOT EXISTS (
+      SELECT 1
+      FROM dim_funcionario d
+      WHERE d.cod_matricula = f.COD_MATRICULA
+  );
+
+
+-- =====================================================
+-- 10. RESTRIÇÕES DE UNICIDADE
+-- =====================================================
+
+ALTER TABLE dim_cargo
+ADD UNIQUE KEY uk_cargo (descricao_cargo);
+
+ALTER TABLE dim_categoria
+ADD UNIQUE KEY uk_categoria (descricao_categoria);
+
+ALTER TABLE dim_departamento
+ADD UNIQUE KEY uk_departamento (descricao_departamento);
+
+ALTER TABLE dim_formato
+ADD UNIQUE KEY uk_formato (descricao_formato);
+
+ALTER TABLE dim_modalidade
+ADD UNIQUE KEY uk_modalidade (descricao_modalidade);
+
+ALTER TABLE dim_programa
+ADD UNIQUE KEY uk_programa (descricao_programa);
+
+ALTER TABLE dim_sexo
+ADD UNIQUE KEY uk_sexo (descricao_sexo);
+
+ALTER TABLE dim_funcionario
+ADD UNIQUE KEY uk_funcionario_matricula (cod_matricula);
+
+-- =====================================================
+-- 11. DIMENSÃO TEMPO
+-- A carga será realizada por procedure específica.
+-- =====================================================
+
+
+-- =====================================================
+-- 12. CONFERÊNCIA DAS DIMENSÕES
+-- =====================================================
+
+SELECT * FROM dim_cargo;
+SELECT * FROM dim_categoria;
+SELECT * FROM dim_curso;
+SELECT * FROM dim_departamento;
+SELECT * FROM dim_formato;
+SELECT * FROM dim_modalidade;
+SELECT * FROM dim_programa;
+SELECT * FROM dim_sexo;
+SELECT * FROM dim_funcionario;
+
+-- =====================================================
+-- FIM DA CARGA DAS DIMENSÕES
+-- =====================================================
