@@ -7,9 +7,7 @@
 -- Geração: MySQL Workbench > Server > Data Export
 -- =====================================================
 
-
 USE mmd_staging;
-
 
 -- =====================================================
 -- 1. STAGING DE CURSOS

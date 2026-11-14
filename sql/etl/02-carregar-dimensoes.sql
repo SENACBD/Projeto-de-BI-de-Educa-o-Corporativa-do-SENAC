@@ -195,44 +195,16 @@ WHERE f.COD_MATRICULA IS NOT NULL
       FROM dim_funcionario d
       WHERE d.cod_matricula = f.COD_MATRICULA
   );
-
-
--- =====================================================
--- 10. RESTRIÇÕES DE UNICIDADE
--- =====================================================
-
-ALTER TABLE dim_cargo
-ADD UNIQUE KEY uk_cargo (descricao_cargo);
-
-ALTER TABLE dim_categoria
-ADD UNIQUE KEY uk_categoria (descricao_categoria);
-
-ALTER TABLE dim_departamento
-ADD UNIQUE KEY uk_departamento (descricao_departamento);
-
-ALTER TABLE dim_formato
-ADD UNIQUE KEY uk_formato (descricao_formato);
-
-ALTER TABLE dim_modalidade
-ADD UNIQUE KEY uk_modalidade (descricao_modalidade);
-
-ALTER TABLE dim_programa
-ADD UNIQUE KEY uk_programa (descricao_programa);
-
-ALTER TABLE dim_sexo
-ADD UNIQUE KEY uk_sexo (descricao_sexo);
-
-ALTER TABLE dim_funcionario
-ADD UNIQUE KEY uk_funcionario_matricula (cod_matricula);
+  
 
 -- =====================================================
--- 11. DIMENSÃO TEMPO
+-- 10. DIMENSÃO TEMPO
 -- A carga será realizada por procedure específica.
 -- =====================================================
 
 
 -- =====================================================
--- 12. CONFERÊNCIA DAS DIMENSÕES
+-- 11. CONFERÊNCIA DAS DIMENSÕES
 -- =====================================================
 
 SELECT * FROM dim_cargo;

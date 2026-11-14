@@ -22,7 +22,7 @@ SET @OLD_SQL_MODE = @@SQL_MODE,
 -- 0. CRIAÇÃO DO BANCO
 -- =====================================================
 
--- DROP DATABASE IF EXISTS mmd_datawarehouse;
+DROP DATABASE IF EXISTS mmd_datawarehouse;
 CREATE DATABASE IF NOT EXISTS mmd_datawarehouse
 DEFAULT CHARACTER SET utf8mb4
 COLLATE utf8mb4_0900_ai_ci;
@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS dim_sexo (
     descricao_sexo VARCHAR(1) NOT NULL,
     
     PRIMARY KEY (id_sexo),
-	UNIQUE KEY uk_dim_sexo (cod_sexo)
+	UNIQUE KEY uk_dim_sexo (id_sexo)
 ) ENGINE = InnoDB;
 
 
