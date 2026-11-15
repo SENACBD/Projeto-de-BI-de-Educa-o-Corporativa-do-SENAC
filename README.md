@@ -1,12 +1,12 @@
-# Projeto de BI: Educação de Colaboradores - SENAC
+# Projeto de BI: Educação de Colaboradores SENAC
 
 ![Dados](image.jpg)
 
 ## Sobre
-[Este projeto](https://github.com/SENACBD/Projeto-de-BI-de-Educa-o-Corporativa-do-SENAC) é uma experiência prática de Ciência de Dados em que analisamos três datasets contendo dados sobre funcionários de uma instituição de ensino (SENAC), cursos ofertados e um histórico de participações.
+[Este projeto](https://github.com/SENACBD/Projeto-de-BI-de-Educa-o-Corporativa-do-SENAC) é uma experiência prática de Ciência de Dados em que analisamos dados fictícios sobre treinamentos de funcionários da instituição de ensino SENAC a partir de 3 tabelas: cursos ofertados, funcionários e histórico de participações.
 
 ## Objetivo
-Desenvolver as nossas habilidades de análise, engenharia, ciência e visualização de dados ao passo em que verificamos se as métricas que escolhemos podem ou não ser medidas e acompanhadas com base nos dados que recebemos e quais decisões podem ser tomadas a partir delas.
+Analisar, preparar, tratar e processar os dados, acompanhamento das métricas definidas desde que hajam os dados necessários para tomada de decisão, ao passo em que desenvolvemos nossas habilidades de análise, engenharia, ciência e visualização de dados.
 
 ## A FAZER:
 1. Definir mais métricas
