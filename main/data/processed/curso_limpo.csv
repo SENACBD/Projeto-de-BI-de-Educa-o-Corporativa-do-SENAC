@@ -9,10 +9,10 @@ COD_CURSO;DESCRICAO_CURSO;PROGRAMA;CATEGORIA;FORMATO;DATA_INCLUSAO;CARGA_HORARIA
 10008/2024;Change Management for Leaders;Programa de Desenvolvimento de Líderes;GERENCIAL;INTERNO;2024-07-14;28;EAD;;2320.5
 10009/2024;Gestão Administrativa;Programa de Desenvolvimento de Líderes;GERENCIAL;EXTERNO;2024-04-28;32;PRESENCIAL;Sim;3890.25
 10010/2024;Liderança Situacional;Programa de Desenvolvimento de Líderes;GERENCIAL;INTERNO;2024-01-18;30;EAD;Sim;2540.8
-10011/2024;Data Science for Business;Programa de Desenvolvimento de Sucessores;TÉCNICO;EXTERNO;;40;;;4750.3
+10011/2024;Data Science for Business;Programa de Desenvolvimento de Sucessores;TÉCNICO;EXTERNO;;40;PRESENCIAL;;4750.3
 10012/2024;Team Building and Collaboration;Programa de Desenvolvimento de Líderes;TRANSVERSAL;INTERNO;2024-02-12;24;PRESENCIAL;Sim;1850.6
-10013/2024;Emotional Intelligence for Executives;Programa de Desenvolvimento de Líderes;GERENCIAL;;2024-08-27;28;EAD;Sim;2180.4
-10014/2024;Network Security;;TÉCNICO;EXTERNO;2024-01-27;35;PRESENCIAL;Sim;3920.5
+10013/2024;Emotional Intelligence for Executives;Programa de Desenvolvimento de Líderes;GERENCIAL;INTERNO;2024-08-27;28;EAD;Sim;2180.4
+10014/2024;Network Security;Programa de Desenvolvimento de Sucessores;TÉCNICO;EXTERNO;2024-01-27;35;PRESENCIAL;Sim;3920.5
 10015/2024;Coordenação de Equipes;Programa de Desenvolvimento de Líderes;GERENCIAL;INTERNO;2024-12-02;30;PRESENCIAL;Sim;2810.75
 10016/2024;Database Administration;Programa de Desenvolvimento de Sucessores;TÉCNICO;INTERNO;2024-08-19;32;EAD;Sim;2640.25
 10017/2024;Financial Management for IT;Programa de Desenvolvimento de Líderes;GERENCIAL;EXTERNO;2024-12-06;30;PRESENCIAL;Sim;4125.9

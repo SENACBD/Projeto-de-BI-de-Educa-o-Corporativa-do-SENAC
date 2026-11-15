@@ -1,19 +1,19 @@
 COD_PROCESSO;COD_MATRICULA;NOME_FUNCIONARIO;CHEFE;DEPARTAMENTO;AREA;DESCRICAO_CURSO;PROGRAMA;FORMATO;MODALIDADE;DATA_INICIO;DATA_CONCLUSAO
 10002/2024;10070;Linda Evangelista;Não;Secretaria Acadêmica;Administração;Cybersecurity Advanced;Programa de Desenvolvimento de Sucessores;EXTERNO;PRESENCIAL;2024-01-19;2024-01-23
 10010/2024;10012;Gal Gadot;Não;Coordenação de Análise e Desenvolvimento de Sistemas;Acadêmico;Liderança Situacional;Programa de Desenvolvimento de Líderes;INTERNO;EAD;2024-08-13;2024-08-17
-10046/2025;10006;Kate Beckinsale;Não;Coordenação de Banco de Dados;Acadêmico;Agile Methodology;Programa de Desenvolvimento de Sucessores;EXTERNO;;2025-09-19;2025-09-23
+10046/2025;10006;Kate Beckinsale;Não;Coordenação de Banco de Dados;Acadêmico;Agile Methodology;Programa de Desenvolvimento de Sucessores;EXTERNO;PRESENCIAL;2025-09-19;2025-09-23
 10048/2025;10130;Timóteo;Não;Departamento de Recursos Humanos;Recursos Humanos;Project Management Fundamentals;Programa de Desenvolvimento de Sucessores;EXTERNO;PRESENCIAL;2025-03-02;2025-03-07
-10043/2025;10070;Linda Evangelista;Não;Secretaria Acadêmica;Administração;;Programa de Desenvolvimento de Sucessores;INTERNO;EAD;2025-08-27;2025-08-31
-10020/2024;10008;Angelina Jolie;;Coordenação de Análise e Desenvolvimento de Sistemas;Acadêmico;Administração de Recursos Humanos;Programa de Desenvolvimento de Líderes;INTERNO;EAD;2024-02-13;2024-02-17
+10043/2025;10070;Linda Evangelista;Não;Secretaria Acadêmica;Administração;IoT Solutions;Programa de Desenvolvimento de Sucessores;INTERNO;EAD;2025-08-27;2025-08-31
+10020/2024;10008;Angelina Jolie;Não;Coordenação de Análise e Desenvolvimento de Sistemas;Acadêmico;Administração de Recursos Humanos;Programa de Desenvolvimento de Líderes;INTERNO;EAD;2024-02-13;2024-02-17
 10024/2024;10073;Naomi Watts;Não;Departamento de Recursos Humanos;Administração;Gestão de Processos;Programa de Desenvolvimento de Líderes;INTERNO;EAD;2024-10-17;
-10016/2024;10060;;Não;Coordenação de Banco de Dados;Acadêmico;Database Administration;Programa de Desenvolvimento de Sucessores;INTERNO;EAD;2024-01-15;2024-01-19
-10030/2024;10006;Kate Beckinsale;;Coordenação de Banco de Dados;Acadêmico;Supervisão e Liderança;Programa de Desenvolvimento de Líderes;EXTERNO;PRESENCIAL;2024-03-12;2024-03-17
+10016/2024;10060;Karlie Kloss;Não;Coordenação de Banco de Dados;Acadêmico;Database Administration;Programa de Desenvolvimento de Sucessores;INTERNO;EAD;2024-01-15;2024-01-19
+10030/2024;10006;Kate Beckinsale;Não;Coordenação de Banco de Dados;Acadêmico;Supervisão e Liderança;Programa de Desenvolvimento de Líderes;EXTERNO;PRESENCIAL;2024-03-12;2024-03-17
 10019/2024;10130;Timóteo;Não;Departamento de Recursos Humanos;Recursos Humanos;Comunicação Escrita Efetiva;Programa de Desenvolvimento de Líderes;INTERNO;PRESENCIAL;2024-06-21;2024-06-25
 10002/2024;10055;Anne Hathaway;Não;Coordenação de Análise e Desenvolvimento de Sistemas;Acadêmico;Cybersecurity Advanced;Programa de Desenvolvimento de Sucessores;EXTERNO;PRESENCIAL;2024-10-27;2024-10-31
-10017/2024;10007;Jennifer Aniston;Sim;;Acadêmico;Financial Management for IT;Programa de Desenvolvimento de Líderes;EXTERNO;PRESENCIAL;2024-03-03;2024-03-07
-10020/2024;10065;;Não;Departamento de Recursos Humanos;Administração;Administração de Recursos Humanos;Programa de Desenvolvimento de Líderes;INTERNO;EAD;2024-07-10;
+10017/2024;10007;Jennifer Aniston;Sim;Coordenação de Análise e Desenvolvimento de Sistemas;Acadêmico;Financial Management for IT;Programa de Desenvolvimento de Líderes;EXTERNO;PRESENCIAL;2024-03-03;2024-03-07
+10020/2024;10065;Irina Shayk;Não;Departamento de Recursos Humanos;Administração;Administração de Recursos Humanos;Programa de Desenvolvimento de Líderes;INTERNO;EAD;2024-07-10;
 10045/2025;10056;Amy Adams;Não;Coordenação de Banco de Dados;Acadêmico;Software Development Lifecycle;Programa de Desenvolvimento de Sucessores;INTERNO;EAD;2025-09-30;2025-10-05
-10022/2024;10014;Natalie Portman;Sim;;Acadêmico;CIO Strategic Planning;Programa de Desenvolvimento de Líderes;EXTERNO;PRESENCIAL;2024-12-31;2025-01-05
+10022/2024;10014;Natalie Portman;Sim;Coordenação de Análise e Desenvolvimento de Sistemas;Acadêmico;CIO Strategic Planning;Programa de Desenvolvimento de Líderes;EXTERNO;PRESENCIAL;2024-12-31;2025-01-05
 10031/2025;10062;Bella Hadid;Não;Secretaria Acadêmica;Administração;Full Stack Development;Programa de Desenvolvimento de Sucessores;INTERNO;EAD;2025-07-08;
 10020/2024;10068;Claudia Schiffer;Não;Coordenação de Banco de Dados;Acadêmico;Administração de Recursos Humanos;Programa de Desenvolvimento de Líderes;INTERNO;EAD;2024-06-07;2024-06-11
 10027/2024;10033;Drew Barrymore;Não;Secretaria Acadêmica;Administração;Desenvolvimento de Líderes;Programa de Desenvolvimento de Líderes;INTERNO;PRESENCIAL;2024-05-16;2024-05-20

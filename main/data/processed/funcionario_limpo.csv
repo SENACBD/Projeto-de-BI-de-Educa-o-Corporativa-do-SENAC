@@ -15,13 +15,13 @@ COD_MATRICULA;NOME_FUNCIONARIO;MATRICULA_ATIVA;CARGO;AREA;CHEFE;DEPARTAMENTO;SEX
 10014;Natalie Portman;Sim;Professor;Acadêmico;Sim;Coordenação de Análise e Desenvolvimento de Sistemas;F;Doutorado;1981-06-09
 10015;Amber Heard;Não;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1986-04-22
 10016;Meghan Markle;Sim;Secretário;Administração;Não;Secretaria Acadêmica;F;Pós-Graduado;1981-08-04
-10017;;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Graduado;1996-09-01
+10017;Zendaya;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Graduado;1996-09-01
 10018;Rihanna;Sim;Professor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Mestrado;1988-02-20
-10019;Taylor Swift;Sim;;Administração;Não;Departamento de Recursos Humanos;F;Graduado;
+10019;Taylor Swift;Sim;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;
 10020;Ariana Grande;Sim;Secretário;Administração;Não;Secretaria Acadêmica;F;Pós-Graduado;1993-03-26
 10021;Dua Lipa;Sim;Instrutor;Acadêmico;Não;Coordenação de Banco de Dados;F;Graduado;1995-08-22
 10022;Billie Eilish;Não;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;2001-12-18
-10023;;Sim;Psicólogo;Administração;Não;Secretaria Acadêmica;F;Pós-Graduado;1996-11-22
+10023;Hailey Baldwin;Sim;Psicólogo;Administração;Não;Secretaria Acadêmica;F;Pós-Graduado;1996-11-22
 10024;Kendall Jenner;Sim;Instrutor;Acadêmico;Não;Coordenação de Análise e Desenvolvimento de Sistemas;F;Graduado;1995-11-03
 10025;Kylie Jenner;Sim;Auxiliar Administrativo;Administração;Não;Departamento de Recursos Humanos;F;Graduado;1997-08-10
 10026;Kim Kardashian;Sim;Secretário;Administração;Sim;Secretaria Acadêmica;F;Pós-Graduado;1980-10-21
