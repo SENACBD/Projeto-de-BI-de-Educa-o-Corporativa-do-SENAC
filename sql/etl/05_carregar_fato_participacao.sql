@@ -27,7 +27,6 @@ SELECT
     m.id_modalidade,
     pr.id_programa,
     sx.id_sexo,
-
     ti.id_tempo,
     tc.id_tempo
 
@@ -73,4 +72,32 @@ LEFT JOIN mmd_datawarehouse.dim_tempo tc
     ON tc.data = STR_TO_DATE(
         NULLIF(TRIM(p.DATA_CONCLUSAO), ''),
         '%Y-%m-%d'
-    );
+    )
+
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM mmd_datawarehouse.fato_participacao existente
+
+    INNER JOIN mmd_datawarehouse.dim_curso ce
+        ON ce.id_curso = existente.id_curso
+
+    INNER JOIN mmd_datawarehouse.dim_funcionario fe
+        ON fe.id_funcionario = existente.id_funcionario
+
+    INNER JOIN mmd_datawarehouse.dim_tempo te
+        ON te.id_tempo = existente.id_tempo_inicio
+
+    LEFT JOIN mmd_datawarehouse.dim_tempo tec
+        ON tec.id_tempo = existente.id_tempo_conclusao
+
+    WHERE ce.cod_curso = TRIM(p.COD_PROCESSO)
+      AND fe.cod_matricula = p.COD_MATRICULA
+      AND te.data = STR_TO_DATE(p.DATA_INICIO, '%Y-%m-%d')
+      AND tec.data <=> STR_TO_DATE(
+          NULLIF(TRIM(p.DATA_CONCLUSAO), ''),
+          '%Y-%m-%d'
+      )
+);
+
+SELECT COUNT(*) AS total_participacoes
+FROM mmd_datawarehouse.fato_participacao;

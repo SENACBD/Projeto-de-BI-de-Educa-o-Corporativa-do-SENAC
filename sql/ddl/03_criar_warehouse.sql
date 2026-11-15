@@ -251,7 +251,7 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
 
 --    CONSTRAINT fk_fato_tempo
 --        FOREIGN KEY (id_tempo)
----        REFERENCES dim_tempo (id_tempo),
+--        REFERENCES dim_tempo (id_tempo),
 
 
     
@@ -263,37 +263,37 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
 
 ) ENGINE = InnoDB;
 
+-- Considerando que:
+-- O mesmo funcionário pode participar várias vezes do mesmo curso.
+-- Cada participação será identificada pelo seu período.
+-- Participações com datas diferentes serão preservadas.
+-- Uma participação em andamento terá DATA_CONCLUSAO nula.
 
--- =====================================================
--- 12. PLACEHOLDERS PARA CARGA DAS DIMENSÕES
--- =====================================================
+-- Validar a chave de negócio nos dados:
+-- SELECT
+--     TRIM(COD_PROCESSO) AS COD_PROCESSO,
+--     COD_MATRICULA,
+--     DATA_INICIO,
+--     DATA_CONCLUSAO,
+--     COUNT(*) AS quantidade
+-- FROM mmd_staging.participacaocurso_limpo
+-- GROUP BY
+--     TRIM(COD_PROCESSO),
+--     COD_MATRICULA,
+--     DATA_INICIO,
+--     DATA_CONCLUSAO
+-- HAVING COUNT(*) > 1;
 
--- INSERT PLACEHOLDER: DIM_TEMPO
+-- Criar uma proteção contra duplicidades:
+ALTER TABLE mmd_datawarehouse.fato_participacao
+ADD CONSTRAINT uk_fato_participacao
+UNIQUE (
+    id_curso,
+    id_funcionario,
+    id_tempo_inicio,
+    id_tempo_conclusao
+);
 
--- INSERT PLACEHOLDER: DIM_DEPARTAMENTO
-
--- INSERT PLACEHOLDER: DIM_FUNCIONARIO
-
--- INSERT PLACEHOLDER: DIM_SEXO
-
--- INSERT PLACEHOLDER: DIM_CURSO
-
--- INSERT PLACEHOLDER: DIM_FORMATO
-
--- INSERT PLACEHOLDER: DIM_CATEGORIA
-
--- INSERT PLACEHOLDER: DIM_MODALIDADE
-
--- INSERT PLACEHOLDER: DIM_PROGRAMA
-
--- INSERT PLACEHOLDER: DIM_CARGO
-
-
--- =====================================================
--- 13. PLACEHOLDER PARA CARGA DA TABELA FATO
--- =====================================================
-
--- INSERT PLACEHOLDER: FATO_PARTICIPACAO
 
 
 -- =====================================================
