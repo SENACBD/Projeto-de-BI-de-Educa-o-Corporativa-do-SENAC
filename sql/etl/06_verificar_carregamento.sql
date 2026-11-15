@@ -1,4 +1,4 @@
--- Quantidade de participações
+-- Quantidade de participações DEVE SER IGUAL AO INPUT
 SELECT COUNT(*) AS total_participacoes
 FROM mmd_datawarehouse.fato_participacao;
 

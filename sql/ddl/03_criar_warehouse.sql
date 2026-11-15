@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS dim_sexo (
     descricao_sexo VARCHAR(1) NOT NULL,
     
     PRIMARY KEY (id_sexo),
-	UNIQUE KEY uk_dim_sexo (id_sexo)
+	UNIQUE KEY uk_dim_sexo (descricao_sexo)
 ) ENGINE = InnoDB;
 
 
@@ -144,7 +144,7 @@ CREATE TABLE dim_categoria (
 
 CREATE TABLE dim_modalidade (
     id_modalidade INT NOT NULL AUTO_INCREMENT,
-    descricao_modalidade VARCHAR(10) NOT NULL,
+    descricao_modalidade VARCHAR(15) NOT NULL,
     
     PRIMARY KEY (id_modalidade),
     UNIQUE KEY uk_modalidade (descricao_modalidade)
@@ -181,9 +181,10 @@ CREATE TABLE dim_cargo (
 -- 11. TABELA FATO PARTICIPAÇÃO EM CURSOS
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS fato_participacao (
+CREATE TABLE fato_participacao (
     id_participacao INT NOT NULL AUTO_INCREMENT,
 
+    -- CHAVES DIMENSIONAIS
     id_cargo INT NOT NULL,
     id_categoria INT NOT NULL,
     id_curso INT NOT NULL,
@@ -193,14 +194,51 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
     id_modalidade INT NOT NULL,
     id_programa INT NOT NULL,
     id_sexo INT NOT NULL,
---    id_tempo INT NOT NULL,
 
-
-    
+    -- DIMENSÃO TEMPO
     id_tempo_inicio INT NOT NULL,
     id_tempo_conclusao INT NULL,
 
+    -- MÉTRICA
+    quantidade_participacao INT NOT NULL DEFAULT 1,
+
     PRIMARY KEY (id_participacao),
+
+    CONSTRAINT chk_quantidade_participacao
+        CHECK (quantidade_participacao > 0),
+
+    FOREIGN KEY (id_cargo)
+        REFERENCES dim_cargo(id_cargo),
+
+    FOREIGN KEY (id_categoria)
+        REFERENCES dim_categoria(id_categoria),
+
+    FOREIGN KEY (id_curso)
+        REFERENCES dim_curso(id_curso),
+
+    FOREIGN KEY (id_formato)
+        REFERENCES dim_formato(id_formato),
+
+    FOREIGN KEY (id_departamento)
+        REFERENCES dim_departamento(id_departamento),
+
+    FOREIGN KEY (id_funcionario)
+        REFERENCES dim_funcionario(id_funcionario),
+
+    FOREIGN KEY (id_modalidade)
+        REFERENCES dim_modalidade(id_modalidade),
+
+    FOREIGN KEY (id_programa)
+        REFERENCES dim_programa(id_programa),
+
+    FOREIGN KEY (id_sexo)
+        REFERENCES dim_sexo(id_sexo),
+
+    FOREIGN KEY (id_tempo_inicio)
+        REFERENCES dim_tempo(id_tempo),
+
+    FOREIGN KEY (id_tempo_conclusao)
+        REFERENCES dim_tempo(id_tempo),
 
     INDEX idx_fato_cargo (id_cargo),
     INDEX idx_fato_categoria (id_categoria),
@@ -211,55 +249,8 @@ CREATE TABLE IF NOT EXISTS fato_participacao (
     INDEX idx_fato_modalidade (id_modalidade),
     INDEX idx_fato_programa (id_programa),
     INDEX idx_fato_sexo (id_sexo),
---    INDEX idx_fato_tempo (id_tempo),
-
-    CONSTRAINT fk_fato_cargo
-        FOREIGN KEY (id_cargo)
-        REFERENCES dim_cargo (id_cargo),
-
-    CONSTRAINT fk_fato_categoria
-        FOREIGN KEY (id_categoria)
-        REFERENCES dim_categoria (id_categoria),
-
-    CONSTRAINT fk_fato_curso
-        FOREIGN KEY (id_curso)
-        REFERENCES dim_curso (id_curso),
-
-    CONSTRAINT fk_fato_formato
-        FOREIGN KEY (id_formato)
-        REFERENCES dim_formato (id_formato),
-
-    CONSTRAINT fk_fato_departamento
-        FOREIGN KEY (id_departamento)
-        REFERENCES dim_departamento (id_departamento),
-
-    CONSTRAINT fk_fato_funcionario
-        FOREIGN KEY (id_funcionario)
-        REFERENCES dim_funcionario (id_funcionario),
-
-    CONSTRAINT fk_fato_modalidade
-        FOREIGN KEY (id_modalidade)
-        REFERENCES dim_modalidade (id_modalidade),
-
-    CONSTRAINT fk_fato_programa
-        FOREIGN KEY (id_programa)
-        REFERENCES dim_programa (id_programa),
-
-    CONSTRAINT fk_fato_sexo
-        FOREIGN KEY (id_sexo)
-        REFERENCES dim_sexo (id_sexo),
-
---    CONSTRAINT fk_fato_tempo
---        FOREIGN KEY (id_tempo)
---        REFERENCES dim_tempo (id_tempo),
-
-
-    
-    FOREIGN KEY (id_tempo_inicio)
-        REFERENCES dim_tempo(id_tempo),
-
-    FOREIGN KEY (id_tempo_conclusao)
-        REFERENCES dim_tempo(id_tempo)
+    INDEX idx_fato_tempo_inicio (id_tempo_inicio),
+    INDEX idx_fato_tempo_conclusao (id_tempo_conclusao)
 
 ) ENGINE = InnoDB;
 

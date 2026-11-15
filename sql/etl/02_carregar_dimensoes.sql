@@ -59,18 +59,28 @@ INSERT INTO dim_curso (
 SELECT
     TRIM(c.COD_CURSO),
     TRIM(c.DESCRICAO_CURSO),
-    STR_TO_DATE(c.DATA_INCLUSAO, '%Y-%m-%d'),
+
+    STR_TO_DATE(
+        NULLIF(TRIM(c.DATA_INCLUSAO), ''),
+        '%Y-%m-%d'
+    ),
+
     c.CARGA_HORARIA,
-    TRIM(c.CURSO_REALIZADO),
+    NULLIF(TRIM(c.CURSO_REALIZADO), ''),
     c.VALOR
+
 FROM mmd_staging.curso_limpo c
+
 WHERE c.COD_CURSO IS NOT NULL
   AND TRIM(c.COD_CURSO) <> ''
-  AND NOT EXISTS (
-      SELECT 1
-      FROM dim_curso d
-      WHERE d.cod_curso = TRIM(c.COD_CURSO)
-  );
+  AND UPPER(TRIM(c.COD_CURSO)) <> '<NA>'
+
+ON DUPLICATE KEY UPDATE
+    descricao_curso = VALUES(descricao_curso),
+    data_inclusao_curso = VALUES(data_inclusao_curso),
+    carga_horaria_curso = VALUES(carga_horaria_curso),
+    realizado_curso = VALUES(realizado_curso),
+    valor_contratado_curso = VALUES(valor_contratado_curso);
 
 
 -- =====================================================
@@ -187,14 +197,25 @@ SELECT
     TRIM(f.AREA),
     TRIM(f.CHEFE),
     TRIM(f.GRAU_INSTRUCAO),
-    STR_TO_DATE(f.DATA_NASCIMENTO, '%Y-%m-%d')
+
+    STR_TO_DATE(
+        NULLIF(TRIM(f.DATA_NASCIMENTO), ''),
+        '%Y-%m-%d'
+    )
+
 FROM mmd_staging.funcionario_limpo f
+
 WHERE f.COD_MATRICULA IS NOT NULL
-  AND NOT EXISTS (
-      SELECT 1
-      FROM dim_funcionario d
-      WHERE d.cod_matricula = f.COD_MATRICULA
-  );
+  AND f.NOME_FUNCIONARIO IS NOT NULL
+  AND TRIM(f.NOME_FUNCIONARIO) <> ''
+
+ON DUPLICATE KEY UPDATE
+    nome_funcionario = VALUES(nome_funcionario),
+    situacao_funcionario = VALUES(situacao_funcionario),
+    area_funcionario = VALUES(area_funcionario),
+    chefe_funcionario = VALUES(chefe_funcionario),
+    grau_instrucao_funcionario = VALUES(grau_instrucao_funcionario),
+    nascimento_funcionario = VALUES(nascimento_funcionario);
   
 
 -- =====================================================
