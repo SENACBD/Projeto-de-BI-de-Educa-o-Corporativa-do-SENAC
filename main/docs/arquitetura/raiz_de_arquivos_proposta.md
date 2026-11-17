@@ -1,3 +1,4 @@
+```
 projeto-bi-crisp-dm/  
 │  
 ├── 📄 README.md  
@@ -73,3 +74,4 @@ projeto-bi-crisp-dm/
 ├── 📄 Makefile  
 ├── 📄 docker-compose.yml  
 └── 📄 LICENSE
+```
